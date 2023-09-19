@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./css/EstiloMainMenu.css">
+    <!-- 
+        Importar la libreria de iconos del css desde boxicons
+        Link: https://boxicons.com/usage
+    -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <img src="./img/Logo-Tiendecita_Alemana.jpg" class="logoTA" alt="menu">
+            <div class="text logo">
+                <!--<span class="name">SIGFVI</span>
+                <span class="tipo">Desarrollador</span>-->
+            </div>
+            <i class="bx bx-menu toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <!-- Lista menu-bar-->
+            <div class="menu">
+                <li class="search-box">
+                    <i class="bx bx-search icon"></i>
+                    <input type="text" placeholder="Buscar...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-home-alt icon"></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-user icon"></i>
+                            <span class="text nav-text">Gestión de Usuario</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-package icon"></i>
+                            <span class="text nav-text">Inventario</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-cart-alt icon"></i>
+                            <span class="text nav-text">Ventas y Facturación</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-bar-chart-square icon"></i>
+                            <span class="text nav-text">Informes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-wallet icon"></i>
+                            <span class="text nav-text">otros</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Boton de modo "Claro" u "Oscuro"-->
+            <div class="bottom-content">
+                <!-- Dejamos bacia esta clase para asignarle un valor con javascript-->
+                <hr>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-cog icon"></i>
+                        <span class="text nav-text">Configuración</span>
+                    </a>
+                </li>
+                <li class="">
+
+                    <a href="#">
+                        <i class="bx bx-log-out icon"></i>
+                        <span class="text nav-text">Cerrar Sesisión</span>
+                    </a>
+                </li>
+                <!-- Este apartado corresponde a el boton de cambio de tema Oscuro y Claro-->
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Modo Oscuro</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar-top">
+        <div class="logo-sigfvi-lf">
+            <img src="./img/Logo-SIGFVI.png" alt="Logo">
+        </div>
+        <div class="image">
+            <img src="./img/Iconos/user-icono-PP.png" alt="Imagen">
+        </div>
+        <div class="txt-container">
+            <p class="rol">Administrador</p>
+            <p class="name">Miguel Angel</p>
+        </div>
+    </div>
+
+    <!-- Contenerdor centro-->
+    <section class="home">
+        <div class="text">
+            Dashboard
+        </div>
+
+    </section>
+
+    <!-- JS Se agrega a lo ultimo o a el final siempre-->
+    <script src="./js/script_menu.js"></script>
+</body>
+
+</html>

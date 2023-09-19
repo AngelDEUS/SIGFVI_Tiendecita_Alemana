@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Font Poppins*/
+
+/* Creamos nuestras variables locales*/
+:root {
+    /*Colores*/
+    --gradient-1: 43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%;
+    --color-menu: rgba(27, 27, 28, 1);
+
+    /* Ahustes de margen*/
+    --margin-s-bar: 80px;
+    --align-icons: 20px;
+    --margin-top-body: 80px;
+
+    --logo-s: 40px;
+
+    /* Margen y anchura de menu*/
+    --margin-h-sidebar: 250px;
+
+    /*Trasiciones*/
+    --tran-fx-03: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    --tran-fx-04: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.4s ease;
+}
+
+/* Primero formateamos todo el css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* desplazamos un poco el body*/
+    margin-left: var(--margin-s-bar);
+    transition: var(--tran-fx-03);
+    margin-top: var(--margin-top-body);
+}
+
+/*Estilo del contenido*/
+main {
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #131314;
+    display: flex;
+    align-items: center;
+    /* Para que siempre se muestre el menu*/
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+/* ----------- Estilo del menu de usuario nav-bar ----------- */
+
+
+.navbar-top {
+    background-color: #1b1b1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.image-left {
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.image-left img {
+    width: 100%;
+    height: auto;
+    filter: blur(2px);
+}
+
+.image {
+    border-radius: 60%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ffac1e;
+    margin-right: 10px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.txt-container {
+    text-align: left;
+}
+
+.txt-container p {
+    margin: 0;
+}
+
+.txt-container p.rol {
+    color: #ffac1e;
+    font-size: 14px;
+}
+
+.txt-container p.name {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* ------------------- Estilo del Side-Menu -------------------- */
+
+/*Menu hamburger*/
+.icon__menu {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+}
+
+.icon__menu i {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    color: #636363;
+}
+
+.logo_sigfvi {
+    height: 25px;
+    width: auto;
+    margin-left: 220px;
+}
+
+
+/* Estilo del side-menu */
+.menu__side {
+    width: var(--margin-s-bar);
+    height: 100%;
+    background-color: #636363;
+    background: var(--color-menu);
+    /* Ajustamos la posicion para que tome todo el largo de la pagina*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #b0b0b0;
+    font-size: 15px;
+    z-index: 300;
+    /* ocultamos el texto*/
+    overflow: hidden;
+    /* Para dispositivos moviles*/
+    overflow-y: scroll;
+    border-right: 20px solid var(--color-menu);
+    transition: var(--tran-fx-04);
+}
+
+/* SubMenus*/
+
+.nav__link {
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside {
+    border-radius: 6px;
+    padding-left: 20px;
+}
+
+/****/
+
+/*Responsive*/
+/* ocultar scroll para chrome, safari y opera*/
+.menu__side::-webkit-scrollbar {
+    display: none;
+}
+
+/* ocultar scroll para IE, Edge y Firefox*/
+.menu__side {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Logo Menu*/
+.name__page {
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name__page i img {
+    width: var(--logo-s);
+    margin-right: 20px;
+    border-radius: 10px;
+
+}
+
+.options__menu {
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+}
+
+.options__menu a {
+    color: #b0b0b0;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: var(--tran-04);
+}
+
+.options__menu a:hover {
+    color: white;
+}
+
+/* Menu inside */
+.list__item {
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.list__item--click {
+    cursor: pointer;
+}
+
+.list__show li {
+    display: block;
+    padding-top: 10px 0;
+    text-decoration: none;
+
+}
+
+.list__show .list__inside a {
+    cursor: pointer;
+
+}
+
+.list__show {
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #131314;
+    list-style: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s;
+}
+
+.arrow .list__arrow {
+    transform: rotate(90deg);
+}
+
+.list__arrow {
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+/* posicionar elementos del side-bar al lado del otro*/
+.options__menu .option {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.options__menu .option i {
+    width: var(--align-icons);
+    cursor: pointer;
+}
+
+.options__menu .option h4 {
+    font-weight: 300;
+    margin-left: var(--align-icons);
+    cursor: pointer;
+}
+
+/* Clase para la seleccion del menu*/
+
+.selected {
+    color: white;
+    border-radius: 20px;
+}
+
+.selected::before {
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: linear-gradient(var(--gradient-1));
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+/* Clases para usar en JavaScript*/
+.body_move {
+    margin-left: var(--margin-h-sidebar);
+}
+
+.menu__side_move {
+    width: var(--margin-h-sidebar);
+}
+
+/* definimos los demia qerys para JavaScript*/
+/* Responsive */
+@media screen and (max-width: 700px) {
+    .body_move {
+        margin-left: 0px;
+    }
+
+    .menu__side_move {
+        width: 80px;
+        left: -80px;
+    }
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGFVI-Producto</title>
+    <link rel="stylesheet" href="/Vista/css/menuprincipal.css">
+    <link rel="stylesheet" href="../css/InventarioStyle.css">
+    <link rel="stylesheet" href="../../../css/allStylesPage.css">
+
+
+    <!-- Iconos sacados de la web de fontawesome con mi cuenta personal Angel. -->
+    <script src="https://kit.fontawesome.com/7182634b87.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body_m">
+    <header>
+        <div class="icon__menu">
+            <i class="fa-solid fa-bars" id="btn_open"></i>
+            <img src="/Vista/img/Logo-SIGFVI.png" class="logo_sigfvi" alt="log">
+        </div>
+        <!--
+        <div class="navbar-top">
+            <div class="image">
+                <img src="./img/Iconos/user-icono-PP.png" alt="Imagen">
+            </div>
+            <div class="txt-container">
+                <p class="rol">Administrador</p>
+                <p class="name">Miguel Angel</p>
+            </div>
+            <img src="./img/Iconos/list.png" class="image-left" alt="abajo">
+        </div>
+        -->
+    </header>
+
+    <!--metodologia de ben en las clases como legibles-->
+    <div class="menu__side" id="menu_side">
+        <div class="name__page">
+            <i> <img src="../img/Logo-Tiendecita_Alemana.jpg" alt=""></i>
+            <h4>Tiendecita Alemana</h4>
+        </div>
+        <!--Contenedor del menu lateral "side-bar"-->
+        <div class="options__menu">
+            <!-- Boton de Inicio -->
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+            <!-- Boton de Gestion de Usuario -->
+            <a href="#">
+                <div class="option">
+                    <i class="fa-solid fa-user" title="Gestion de Usuario"></i>
+                    <h4>Gestion de Usuario</h4>
+                </div>
+            </a>
+
+            <!-- Boton de Inventario -->
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-solid fa-box" title="Inventario"></i>
+                    <h4>Inventario</h4>
+                </div>
+            </a>
+
+            <!-- Boton de Ventas y facturacion -->
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-solid fa-cart-shopping" title="Ventas y facturacion"></i>
+                    <h4>Ventas y facturacion</h4>
+                </div>
+            </a>
+
+            <!-- Boton de Informes -->
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-solid fa-file-invoice" title="Informes"></i>
+                    <h4>Informes</h4>
+                </div>
+            </a>
+
+            <!-- Boton de Ayuda -->
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-solid fa-cat" title="Ayuda"></i>
+                    <h4>Ayuda</h4>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- CONTENEDOR DEL CONTENIDO -->
+    <main>
+        <h1>Inventario</h1>
+        <p>En este panel es el encargado de <s>gestionar</s> los productos, el stock y notificaciones por estado</p>
+        <hr>
+        <section class="mod__inventario">
+            <div class="inventario">
+                <div class="subtitulo">
+                    <h3>Inventario de Productos</h3>
+                </div>
+                <div class="valores">
+                    <div class="valor1">
+                        <p>mostrar  </p>
+                        <input type="number" name="" id="" min="1" style="width: 40px;">
+                        <p>  registros</p>
+                    </div>
+                    <div>
+                        <input type="text" class="buscar"  placeholder="Buscar en el inventario">
+                    </div>
+                </div>
+            </div>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Editar</th>
+                            <th> Imagen </th>
+                            <th> Codigo de producto </th>
+                            <th> Nombre del producto </th>
+                            <th> Tipo de producto </th>
+                            <th> Cantidad Neta de Producto </th>
+                            <th> Cantidad de unidades</th>
+                            <th> Precio de proveedor </th>
+                            <th> Precio de Venta </th>
+                            <th> Fecha de Caducidad </th>
+                            <th> Nombre del proveedor </th>
+                            <th> Estado </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="submit" class="b1__abrir" value=""></td>
+                            <td> <img src="../img/productos/cheese-tris.png" alt="cheese-tris"></td>
+                            <td> AX-201 </td>
+                            <td> Cheese tris </td>
+                            <td> Empaquetado </td>
+                            <td> 40(g) </td>
+                            <td> lote 1/(5)</td>
+                            <td> $1.000 </td>
+                            <td> $1.500 </td>
+                            <td> 13/08/2023 </td>
+                            <td> Fritolay </td>
+                            <td>
+                                <p class="status activo">Delivered</p>
+                            </td>    
+                        </tr>
+                        <tr>
+                            <td><input type="submit" class="b1__abrir" value=""></td>
+                            <td> <img src="../img/productos/cheese-tris.png" alt="cheese-tris"></td>
+                            <td> AX-201 </td>
+                            <td> Cheese tris </td>
+                            <td> Empaquetado </td>
+                            <td> 40(g) </td>
+                            <td> lote 1/(5)</td>
+                            <td> $1.000 </td>
+                            <td> $1.500 </td>
+                            <td> 13/08/2023 </td>
+                            <td> Fritolay </td>
+                            <td>
+                                <p class="status activo">Delivered</p>
+                            </td>    
+                        </tr>
+                        <tr>
+                            <td><input type="submit" class="b1__abrir" value=""></td>
+                            <td> <img src="../img/productos/cheese-tris.png" alt="cheese-tris"></td>
+                            <td> AX-201 </td>
+                            <td> Cheese tris </td>
+                            <td> Empaquetado </td>
+                            <td> 40(g) </td>
+                            <td> lote 1/(5)</td>
+                            <td> $1.000 </td>
+                            <td> $1.500 </td>
+                            <td> 13/08/2023 </td>
+                            <td> Fritolay </td>
+                            <td>
+                                <p class="status activo">Delivered</p>
+                            </td>    
+                        </tr>
+                        <tr>
+                            <td><input type="submit" class="b1__abrir" value=""></td>
+                            <td> <img src="../img/productos/cheese-tris.png" alt="cheese-tris"></td>
+                            <td> AX-201 </td>
+                            <td> Cheese tris </td>
+                            <td> Empaquetado </td>
+                            <td> 40(g) </td>
+                            <td> lote 1/(5)</td>
+                            <td> $1.000 </td>
+                            <td> $1.500 </td>
+                            <td> 13/08/2023 </td>
+                            <td> Fritolay </td>
+                            <td>
+                                <p class="status activo">Delivered</p>
+                            </td>    
+                        </tr>
+                        <tr>
+                            <td><input type="submit" class="b1__abrir" value=""></td>
+                            <td> <img src="../img/productos/cheese-tris.png" alt="cheese-tris"></td>
+                            <td> AX-201 </td>
+                            <td> Cheese tris </td>
+                            <td> Empaquetado </td>
+                            <td> 40(g) </td>
+                            <td> lote 1/(5)</td>
+                            <td> $1.000 </td>
+                            <td> $1.500 </td>
+                            <td> 13/08/2023 </td>
+                            <td> Fritolay </td>
+                            <td>
+                                <p class="status activo">Delivered</p>
+                            </td>    
+                        </tr>
+                        <tr>
+                            <td><input type="submit" class="b1__abrir" value=""></td>
+                            <td> <img src="../img/productos/cheese-tris.png" alt="cheese-tris"></td>
+                            <td> AX-201 </td>
+                            <td> Cheese tris </td>
+                            <td> Empaquetado </td>
+                            <td> 40(g) </td>
+                            <td> lote 1/(5)</td>
+                            <td> $1.000 </td>
+                            <td> $1.500 </td>
+                            <td> 13/08/2023 </td>
+                            <td> Fritolay </td>
+                            <td>
+                                <p class="status activo">Delivered</p>
+                            </td>    
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <div class="pasapagina">
+                <button>anterior</button>
+                <input type="number" name="" id="" min="1" style="width: 40px;">
+                <button>Siguiente</button>
+            </div>
+        </section>
+        <section class="modal">
+            <div class="modal__container">
+                <h3>Gestión de Stock y salida de productos</h3>
+                <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                           
+                            <th> Imagen </th>
+                            <th> Codigo de producto </th>
+                            <th> Nombre del producto </th>
+                            <th> Tipo de producto </th>
+                            <th> Cantidad Neta de Producto </th>
+                            <th> Cantidad de unidades</th>
+                            <th> Precio de proveedor </th>
+                            <th> Precio de Venta </th>
+                            <th> Fecha de Caducidad </th>
+                            <th> Nombre del proveedor </th>
+                            <th> Estado </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                   
+                            <td> <img src="../img/productos/cheese-tris.png" alt="cheese-tris"></td>
+                            <td> AX-201 </td>
+                            <td> Cheese tris </td>
+                            <td> Empaquetado </td>
+                            <td> 40(g) </td>
+                            <td> lote 1/(5)</td>
+                            <td> $1.000 </td>
+                            <td> $1.500 </td>
+                            <td> 13/08/2023 </td>
+                            <td> Fritolay </td>
+                            <td>
+                                <p class="status activo">Delivered</p>
+                            </td>    
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+                </section>
+                    <h3>Descripcion del producto</h3>
+                <div class="modal-contenedor">
+                    <div class="celda-inicio">
+                        <div class="cabeza">
+                            <label for="">Nombre</label>
+                            <input type="text" placeholder="Cheese Tris">
+                        </div>
+                        <div class="cuerpo">
+                            <label for="">Tipo de producto</label> <br>
+                            <select name="" id="">
+                                <option value="">Empaquetado</option>
+                                <option value="">Botella</option>
+                                <option value="">Lata</option>
+                            </select>
+                        </div>
+                        <div class="cuerpo"><label for="">Cantidad Neto</label> <br>
+                            <input type="number" name="" id="" placeholder="45">
+                            <select name="" id="">
+                                <option value="">Gramos</option>
+                                <option value="">Mililitros</option>
+                                <option value="">Litros</option>
+                            </select>
+                        </div>
+                        <div class="cuerpo">
+                            <label for="">Cantidad</label> <br>
+                            <input type="number" name="" id="" placeholder="5">
+                        </div>
+                        <div class="cuerpo">
+                            <label for="">Codigo</label> <br>
+                            <input type="text" name="" id="" placeholder="AX-201" >
+                        </div>
+                        <div class="cuerpo">
+                            <label for="">Cantidad en Stock</label> <br>
+                            <input type="number" name="" id="" placeholder="5">
+                        </div>
+                        <div class="cuerpo">
+                            <label for="">Estado</label> <br>
+                            <select name="" id="">
+                                <option value="">Activo</option>
+                                <option value="">Inactivo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="celda-mini">
+                        <div>
+                        <p>Ingresar foto del producto</p>
+                        <img src="../img/productos/cheese-tris.png" alt="" style="width: 35px; height: 35px;">
+                        </div>
+                        <div>
+                            <label for="">Precio de proveedor</label>
+                            <input type="number" name="" id="" placeholder="$1.000">
+                        </div>
+                        <div>
+                            <label for="">Precio de venta</label>
+                            <input type="number" name="" id="" placeholder="$1.500">
+                        </div>
+                    </div>
+                    <div class="celda-final">
+                        <div>
+                            <label for="">Fecha de vencimiento</label> <br>
+                            <input type="date" name="" id=""> <br>
+                            <label for="">Escoger Proveedor</label><br>
+                            <input type="text"><br>
+                            <input type="text" placeholder="Agregar mensaje" style="height: 50px;">
+                        </div>
+                        <div class="boton-actualizar">
+                            <a href="#" class="modal__close">Actualizar datos</a>
+                        </div>
+                        <div class="boton-salida">
+                            <a href="#" class="modal__close">Dar salida del producto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="/Vista/js/menuprincipal.js"></script>
+    <script src="../js/modal-inventario.js"></script>
+</body>
+
+</html>
+
+<!--
+    Recurosos personales
+    video 1:    https://www.youtube.com/watch?v=idRdAgNnC5Q
+    Iconos 1:   https://fontawesome.com/
+-->

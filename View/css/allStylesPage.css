@@ -1,0 +1,64 @@
+:root {
+    --colorP: #636363;
+    --colorP2: #b0b0b0;
+    --colorS: #ffaa56;
+
+    /* Gradient Color */
+    --gradient1: 90deg, rgba(154, 99, 200, 1) 0%, rgba(255, 103, 103, 1) 30%, rgba(255, 170, 86, 1) 80%;
+}
+
+
+.formstyle input,
+.formstyle button {
+    margin-right: 20px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border-radius: 20px;
+    color: rgb(51, 51, 51);
+}
+
+h1 {
+    text-align: left;
+    background: rgb(154, 99, 200);
+    background: linear-gradient(var(--gradient1));
+    font-family: system-ui;
+    font-size: 55px;
+    /*line-height: 135%;*/
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+h3 {
+    color: #232323;
+}
+
+p {
+    font-weight: 50;
+    color: #636363;
+}
+
+
+
+s {
+    color: var(--colorS);
+}
+
+/* Seleccion con mouse*/
+p::selection {
+    color: white;
+    background-color: #ffba75;
+}
+
+s::selection {
+    color: rgb(182, 119, 105);
+    background-color: #ffba75;
+}
+
+
+hr {
+    opacity: 20%;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+}

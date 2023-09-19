@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Logo-Tiendecita_Alemana.jpg" class="favicon">
+    <title>SIGFVI-Sistem 'facturacion'</title>
+
+    <link rel="stylesheet" href="./css/menuprincipal.css">
+    <link rel="stylesheet" href="./Modulos/Mod Facturacion y Ventas/css/mod-ventas-facturacion.css">
+    <link rel="stylesheet" href="./css/allStylesPage.css">
+
+    <!-- Iconos sacados de la web de fontawesome con mi cuenta personal Angel. -->
+    <script src="https://kit.fontawesome.com/7182634b87.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body_m">
+    <header>
+        <div class="icon__menu">
+            <i class="fa-solid fa-bars" id="btn_open"></i>
+            <img src="./img/Logo-SIGFVI.png" class="logo_sigfvi" alt="log">
+        </div>
+        <!--
+        <div class="navbar-top">
+            <div class="image">
+                <img src="./img/Iconos/user-icono-PP.png" alt="Imagen">
+            </div>
+            <div class="txt-container">
+                <p class="rol">Administrador</p>
+                <p class="name">Miguel Angel</p>
+            </div>
+            <img src="./img/Iconos/list.png" class="image-left" alt="abajo">
+        </div>
+        -->
+    </header>
+    <!--metodologia de ben en las clases como legibles-->
+    <div class="menu__side" id="menu_side">
+        <div class="name__page">
+            <i> <img src="./img/Logo-Tiendecita_Alemana.jpg" alt=""></i>
+            <h4>Tiendecita Alemana</h4>
+        </div>
+        <!--Contenedor del menu lateral "side-bar"-->
+        <div class="options__menu">
+
+            <!-- Boton de Inicio -->
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+            <!-- Boton de Gestion de Usuario -->
+            <a href="#">
+                <div class="option">
+                    <i class="fa-solid fa-user" title="Gestion de Usuario"></i>
+                    <h4>Gestion de Usuario</h4>
+                </div>
+            </a>
+
+            <!-- Boton de Inventario -->
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-solid fa-box" title="Inventario"></i>
+                    <h4>Inventario</h4>
+                </div>
+            </a>
+
+            <!-- Boton de Ventas y facturacion -->
+            <li class="list__item list__item--click">
+                <div class="option list__button list__button--click">
+                    <i class="fas fa-solid fa-cart-shopping" title="Ventas y facturacion"></i>
+                    <a href="#" class="nav__link"></a>
+                    <h4>Ventas y facturacion</h4>
+                    <i class="fa-solid fa-angle-right list__arrow"></i>
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Nueva venta</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Facturas</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Pedidos en curso</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Boton de Informes -->
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-solid fa-file-invoice" title="Informes"></i>
+                    <h4>Informes</h4>
+                </div>
+            </a>
+
+            <!-- Boton de Ayuda -->
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-solid fa-cat" title="Ayuda"></i>
+                    <h4>Ayuda</h4>
+                </div>
+            </a>
+            <div class="option_cards">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENEDOR DEL CONTENIDO -->
+    <main>
+        <h1>Facturas</h1>
+        <p>
+            Este es el modulo encargado visualizar las <s>facturas</s> de las <s>ventas</s> y generar las facturas.
+        </p><br>
+
+        <hr>
+
+        <section class="mod__Ventas">
+            <div class="venta">
+
+                <div class="container">
+                    <div class="button-container">
+                        <div>
+                            <h4>Puede buscar las facturas deseadas por ID o por Nombre</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        </section>
+
+    </main>
+    <script src="./js/menuprincipal.js"></script>
+</body>
+
+</html>
+
+<!--
+    Recurosos personales
+    video 1:    https://www.youtube.com/watch?v=idRdAgNnC5Q
+    Iconos 1:   https://fontawesome.com/
+-->
