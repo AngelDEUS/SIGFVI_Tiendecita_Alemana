@@ -37,12 +37,14 @@ INSERT INTO Tipo_Cargo(ID_Tipo_Cargo_PK, Nombre_Tipo_cargo,Estado_ID_Estado_PK)
 			(2,'CE');
 
  -- #6 -- Usuario
- INSERT INTO Usuario(ID_Numero_Identificacion_PK,ID_Tipo_Identificacion_FKPK,Nombre_Usuario,Segundo_Nombre_Usuario,Apellido_Usuario,Segundo_Apellido_Usuario,Numero_Contacto_Usuario,Email_Usuario,Password_Usuario,ID_Tipo_Cargo_FK,ID_Estado_FK)
-	VALUES ('SW10053-1*',1,'SuperUser','-','_1','.','3153851945','empresa1@gmail.com','...***0000ñ',1,0);
+ /*INSERT INTO Usuario(ID_Numero_Identificacion_PK,ID_Tipo_Identificacion_FKPK,Nombre_Usuario,Segundo_Nombre_Usuario,Apellido_Usuario,Segundo_Apellido_Usuario,Numero_Contacto_Usuario,Email_Usuario,Password_Usuario,ID_Tipo_Cargo_FK,ID_Estado_FK)
+	VALUES ('SW10053-1*',1,'SuperUser','-','_1','.','3153851945','empresa1@gmail.com','...***0000ñ',1,0);*/
+INSERT INTO Usuario(ID_Numero_Identificacion_PK,ID_Tipo_Identificacion_FKPK,Nombre_Usuario,Segundo_Nombre_Usuario,Apellido_Usuario,Segundo_Apellido_Usuario,Numero_Contacto_Usuario,Email_Usuario,Password_Usuario,ID_Tipo_Cargo_FK,ID_Estado_FK)    
+	VALUES ('SW10053-1*',1,'SuperUser','-','_1','.','3153851945','empresa1@gmail.com',hex(aes_encrypt('...***0000ñ',"xd")),1,0);
   INSERT INTO Usuario 
-	VALUES 	('35684579',1,'Luz','Estela','Rodriguez','Linares','3124352560','lstlinares@hotmail.com','Jesus01',2,0),
-			('1006865674',1,'Fransico','Arnolfo','Aristizabal','Rodriguez','3194584239', 'Fra.Aris@gmail.com','123456789',3,0),
-			('10564454999999994',2,'Jean','Carlo','Beltran','Amaya','3155758594', 'jean.carl@gmail.com','j123',3,1);
+	VALUES 	('35684579',1,'Luz','Estela','Rodriguez','Linares','3124352560','lstlinares@hotmail.com',hex(aes_encrypt('Jesus01',"xd")),2,0),
+			('1006865674',1,'Fransico','Arnulfo','Aristizabal','Rodriguez','3194584239', 'Fra.Aris@gmail.com',hex(aes_encrypt('123456789',"xd")),3,0),
+			('10564454999999994',2,'Jean','Carlo','Beltran','Amaya','3155758594', 'jean.carl@gmail.com',hex(aes_encrypt('j123',"xd")),3,1);
  
  -- #7 -- Registro_Proveedor
  INSERT INTO Registro_Proveedor(ID_Registro_Proveedor_PK,Nombre_Empresa,Dia_Visita,Telefono_Contacto,Estado_ID_Estado_PK)
@@ -91,6 +93,7 @@ INSERT INTO Pedido(ID_Metodo_Pago_FK,Fecha_Pedido,Hora_Pedido,IVA,Total_Pedido,I
 			(2,'2023-05-24','23:50:20',19,((300000)+(IVA*(300000)/100)),0,6),
 			(1,'2023-02-17','14:13:28',19,((28500)+(IVA*(28500)/100)),0,7);
     
+select * from Venta_Realizada;    
 -- #12 -- Venta_Realizada
 INSERT INTO Venta_Realizada(ID_Saldo_Cuenta_Deudor_FK,ID_Pedido_FK)
 	VALUES  (1,1);
@@ -100,8 +103,8 @@ INSERT INTO Venta_Realizada(ID_Saldo_Cuenta_Deudor_FK,ID_Pedido_FK)
 			(3,6),
 			(4,7),
 			(5,8),
-			(6,9),
-			(7,10);
+			(6,2),
+			(7,3);
 
 select * from Venta_Realizada;
 select * from Pedido;

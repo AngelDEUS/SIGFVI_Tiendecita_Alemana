@@ -45,3 +45,17 @@ SELECT * FROM pedido;
 SELECT * FROM detalle_pedido;
 SELECT * FROM metodo_de_pago;
 */
+
+/*consulta desencriptando contraseñas*/
+
+select tdoc_usu,id_usu,nombres,apellidos,aes_decrypt(unhex(password),"hunter2")
+	from usuario;
+    
+    
+select ID_Numero_Identificacion_PK, ID_Tipo_Identificacion_FKPK, Nombre_Usuario, Segundo_Nombre_Usuario, Apellido_Usuario, Segundo_Apellido_Usuario, Numero_Contacto_Usuario, Email_Usuario,aes_decrypt(unhex(Password_Usuario),"xd"), ID_Tipo_Cargo_FK, ID_Estado_FK
+	from usuario;
+
+select ID_Numero_Identificacion_PK, Email_Usuario,Password_Usuario, ID_Tipo_Cargo_FK, ID_Estado_FK
+	from usuario;
+select * from usuario;
+describe usuario;
