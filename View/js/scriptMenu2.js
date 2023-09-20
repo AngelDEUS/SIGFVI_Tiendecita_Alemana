@@ -4,12 +4,11 @@ const spans = document.querySelectorAll("span");
 const menu = document.querySelector(".menu");
 const main = document.querySelector("main");
 let listElements = document.querySelectorAll('.list__button--click');//Var Sub_Menu 
-
+const logotopv2 = document.getElementById("logo-sigfvi-top");
 //Metodo para aparece el menu en pantallas pequeñas
 
 menu.addEventListener("click", () => {
     barralateral.classList.toggle("max-barra-lateral");
-
     //Verificamos si se ha agregado la clase de max
     if (barralateral.classList.contains("max-barra-lateral")) {
         menu.children[0].style.display = "none";
@@ -34,6 +33,7 @@ menu.addEventListener("click", () => {
 // Metodo para hacer el menu pequeño
 logo_menu.addEventListener("click", () => {
     barralateral.classList.toggle("mini-barra-lateral");
+    logotopv2.classList.toggle("movetop__logo");
     main.classList.toggle("min-main");
 
     /*Recorremos la lista de spans para agregarles la clase oculto*/
@@ -60,6 +60,7 @@ listElements.forEach(listElement => {
         if (barralateral.classList.contains("mini-barra-lateral")) {
             //console.log('Contiene la clase "mini-barra-lateral"');
             barralateral.classList.toggle("mini-barra-lateral");
+            logotopv2.classList.toggle("movetop__logo");
             main.classList.toggle("min-main");
 
             /*Recorremos la lista de spans para agregarles la clase oculto*/

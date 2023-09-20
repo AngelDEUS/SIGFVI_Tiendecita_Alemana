@@ -39,10 +39,9 @@ p {
     color: #636363;
 }
 
-
-
 s {
     color: var(--colorS);
+    text-decoration: none;
 }
 
 /* Seleccion con mouse*/
