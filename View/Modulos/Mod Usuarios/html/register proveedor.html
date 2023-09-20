@@ -245,33 +245,43 @@
         <div class="container__Main">
             <div class="titulo"><h1>Registar Proveedor</h1></div>
         <div class="datos-contenido">
-            <div>
-                <label for="idp">Identificacion</label>
-                <input type="text" name="idp" id="idp" placeholder="Nombre" onblur="Verificar_id()">
-                <p id="wrongid"></p>
-                <label for="name1">Nombre</label>
-                <input type="text" name="name1" id="name1" placeholder="Nombre" onblur="Verificar_nombre()">
-                <p id="wrongname"></p>
-                <br>
-                <label for="cel">Numero de Telefono</label>
-                <input type="number" name="cel" id="cel" placeholder="Numero" onblur="Verificar_cel()">
-                <p id="wrongcel"></p>
-                
-                <label for="frecuencia">Días que frecuenta:</label>
-                <select name="frecuencia" id="frecuencia" onblur="Verificar_dias()">
-                    <option value="0">Seleccionar</option>
-                    <option value="1">Lunes</option>
-                    <option value="2">Martes</option>
-                    <option value="3">Miercoles</option>
-                    <option value="4">Jueves</option>
-                    <option value="5">Viernes</option>
-                    <option value="6">Sabado</option>
-                    <option value="7">Domingo</option>
-                </select>
-                <p id="wrongfrec"></p>
-                <br>
-                <button type="button" name="submit" id="submit" class="b4__abrir" onclick="Verificar_registro()">Registar</button>
-            </div>
+                <span class="bloc">
+                    <br><br>
+                    <label for="idp">Identificacion</label>
+                    <input type="text" name="idp" id="idp" placeholder="Nombre" onblur="Verificar_id()">
+                    <p id="wrongid"></p>
+                </span>
+                <span class="bloc">
+                    <br><br>
+                    <label for="name1">Nombre</label>
+                    <input type="text" name="name1" id="name1" placeholder="Nombre" onblur="Verificar_nombre()">
+                    <p id="wrongname"></p>
+                </span>
+                <span class="bloc">
+                    <br><br>
+                    <label for="cel">Numero de Telefono</label>
+                    <input type="number" name="cel" id="cel" placeholder="Numero" onblur="Verificar_cel()">
+                    <p id="wrongcel"></p>
+                </span>
+                <span class="bloc">
+                    <br><br>
+                    <label for="frecuencia">Días que frecuenta:</label>
+                    <select name="frecuencia"  id="frecuencia" onblur="Verificar_dias()">
+                        <option value="0">Seleccionar</option>
+                        <option value="1">Lunes</option>
+                        <option value="2">Martes</option>
+                        <option value="3">Miercoles</option>
+                        <option value="4">Jueves</option>
+                        <option value="5">Viernes</option>
+                        <option value="6">Sabado</option>
+                        <option value="7">Domingo</option>
+                    </select>
+                    <p id="wrongfrec"></p>
+                </span>
+                <span class="bloc">
+                    <br><br>
+                    <button type="button" name="submit" id="submit" class="b4__abrir" onclick="Verificar_registro()">Registar</button>
+                </span>
             <div></div>
         </div>
 

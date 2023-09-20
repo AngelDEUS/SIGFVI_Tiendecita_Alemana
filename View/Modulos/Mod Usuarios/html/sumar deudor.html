@@ -244,20 +244,27 @@
     <main class="claseMain">
         <div class="container__Main">
             <h1>Añadir monto</h1>
-        <h2>Monto actual</h2>
-        <br>
-        <table class="montocasilla">
-            <tr>
-                <td>$50.000</td>
-            </tr>
-        </table>
-        <br>
-        <label for="suma">Sumar</label><br>
-        <input type="number" name="suma" id="suma" placeholder="Añadir" onblur="Verificar_suma()">
-        <p id="wrong"></p>
-        <br>
-        <button type="submit" name="submit" id="submit" class="b4" onclick="suma()">Añadir</button>
-        <a href="./tabla deudores.html"><button type="button" class="b2">Regresar</button></a>
+            <form action="" class="">
+                <span>
+                    <h2>Monto actual</h2>
+                    <br>
+                    <table class="montocasilla">
+                        <tr>
+                            <td>$50.000</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <label for="suma">Sumar</label><br>
+                    <input type="number" name="suma" id="suma" placeholder="Añadir" onblur="Verificar_suma()">
+                    <p id="wrong"></p>
+                </span>
+                <span>
+                    <button type="button" name="submit" id="submit" class="b5" onclick="suma()">Añadir</button>
+                </span>
+                <span>
+                    <a href="./tabla deudores.html"><button type="button" class="b6">Regresar</button></a>
+                </span>
+            </form>       
         </div>
     </main>
 

@@ -244,85 +244,95 @@
     <main class="claseMain">
         <div class="container__Main">
             <h1>Editar Usuario</h1>
-            <form action="">
-                <label for="name1">Primer Nombre</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>Francisco</td>
-                    </tr>
-                </table>
-                <input type="text" name="name1" id="name1" placeholder="Primer Nombre" onblur="Verificar_nombre1()">
-                <p id="wrongname1"></p>
-                <br>
-                <label for="name2">Segundo Nombre</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>Arnulfo</td>
-                    </tr>
-                </table>
-                <input type="text" name="name2" id="name2" placeholder="Segundo Nombre" onblur="Verificar_nombre2()">
-                <p id="wrongname2"></p>
-                <br>
-                <label for="apell1">Primer Apellido</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>Aristizabal</td>
-                    </tr>
-                </table>
-                <input type="text" name="apell1" id="apell1" placeholder="Primer Apellido" onblur="Verificar_apell1()">
-                <p id="wrongapell1"></p>
-                <br>
-                <label for="apell2">Segundo Apellido</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>Rodriguez</td>
-                    </tr>
-                </table>
-                <input type="text" name="apell2" id="apell2" placeholder="Segundo Apellido" onblur="Verificar_apell2()">
-                <p id="wrongapell2"></p>
-                <br>
-                <label for="tipoid">Tipo de Identificación</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>Cedula de Ciudadania</td>
-                    </tr>
-                </table>
-                <select name="tipoid" id="tipoid" onblur="Verificar_tipoid()">
-                    <option value="0">Seleccionar</option>
-                    <option value="1">Cedula de Ciudadania</option>
-                    <option value="2">Cedula Extranjera</option>
-                    <option value="3">Pasaporte</option>
-                    <option value="4">Tarjeta de identidad</option>
-                </select>
-                <p id="wrongtipoid"></p>
-                <br>
-                <label for="numid">Número de Identificación</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>1425369874</td>
-                    </tr>
-                </table>
-                <input type="text" name="numid" id="numid" placeholder="Identificación" onblur="Verificar_id()">
-                <p id="wrongid"></p>
-                <br>
-                <label for="cel">Numero de Telefono</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>3112547895</td>
-                    </tr>
-                </table>
-                <input type="number" name="cel" id="cel" placeholder="Numero" onblur="Verificar_tel()">
-                <p id="wrongtel"></p>
-                <br>
-                <label for="cel">Correo electronico</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>Fra.aris@gmail.com</td>
-                    </tr>
-                </table>
-                <input type="email" name="email" id="email" placeholder="email" onblur="Verificar_email()">
-                <p id="wrongemail"></p>
-                <br>
+            <!--<div class="datos-contenido"></div>-->
+            <form action="" class="datos-contenido">
+                <span>
+                    <label for="name1">Primer Nombre</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Francisco</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="name1" id="name1" placeholder="Primer Nombre" onblur="Verificar_nombre1()">
+                    <p id="wrongname1"></p>
+                </span>
+                <span>
+                    <label for="name2">Segundo Nombre</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Arnulfo</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="name2" id="name2" placeholder="Segundo Nombre" onblur="Verificar_nombre2()">
+                    <p id="wrongname2"></p>
+                </span>
+                <span>
+                    <label for="apell1">Primer Apellido</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Aristizabal</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="apell1" id="apell1" placeholder="Primer Apellido" onblur="Verificar_apell1()">
+                    <p id="wrongapell1"></p>
+                </span>
+                <span>
+                    <label for="apell2">Segundo Apellido</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Rodriguez</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="apell2" id="apell2" placeholder="Segundo Apellido" onblur="Verificar_apell2()">
+                    <p id="wrongapell2"></p>
+                </span>
+                <span>
+                    <label for="tipoid">Tipo de Identificación</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Cedula de Ciudadania</td>
+                        </tr>
+                    </table>
+                    <select name="tipoid" id="tipoid" onblur="Verificar_tipoid()">
+                        <option value="0">Seleccionar</option>
+                        <option value="1">Cedula de Ciudadania</option>
+                        <option value="2">Cedula Extranjera</option>
+                        <option value="3">Pasaporte</option>
+                        <option value="4">Tarjeta de identidad</option>
+                    </select>
+                    <p id="wrongtipoid"></p>
+                </span>
+                <span>
+                    <label for="numid">Número de Identificación</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>1425369874</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="numid" id="numid" placeholder="Identificación" onblur="Verificar_id()">
+                    <p id="wrongid"></p>
+                </span>
+                <span>
+                    <label for="cel">Numero de Telefono</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>3112547895</td>
+                        </tr>
+                    </table>
+                    <input type="number" name="cel" id="cel" placeholder="Numero" onblur="Verificar_tel()">
+                    <p id="wrongtel"></p>
+                </span>
+                <span>
+                    <label for="cel">Correo electronico</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Fra.aris@gmail.com</td>
+                        </tr>
+                    </table>
+                    <input type="email" name="email" id="email" placeholder="email" onblur="Verificar_email()">
+                    <p id="wrongemail"></p>
+                </span>
+                
                 <!--<label for="estado">Estado</label>
                 <table class="casillaedit">
                     <tr>
@@ -335,8 +345,11 @@
                     <option value="2">Inactivo</option>
                 </select>
                 <br>-->
-                <button type="button" name="submit" id="submit" class="b4" onclick="Verificar_registro()">Guardar
+                <span>
+                    <br>
+                    <button type="button" name="submit" id="submit" class="b4__abrir" onclick="Verificar_registro()">Guardar
                         Cambios</button>
+                </span>
             </form>
         </div>
     </main>

@@ -245,25 +245,35 @@
         <div class="container__Main">
             <div class="titulo"><h1>Registar Deudor</h1></div>
         <div class="datos-contenido">
-            <div>
-                <label for="idp">identificacion</label>
-                <input type="text" name="id" id="idp" placeholder="id" onblur="Verificar_id()">
-                <p id="wrongid"></p>
-
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="Nombre"  onblur="Verificar_name()">
-                <p id="wrongname"></p>
-                <br>
-                <label for="cel">Numero de Telefono</label>
-                <input type="number" name="cel" id="cel" placeholder="Numero"  onblur="Verificar_cel()">
-                <p id="wrongcel"></p>
-
-                <label for="frecuencia">Dirección</label>
-                <input type="text" name="Direccion" id="Direccion" placeholder="Dirección" onblur="Verificar_addres()">
-                <p id="wrongaddres"></p>
-                <br>
-                <button type="button" name="submit" id="submit" class="b4__abrir" onclick="Verificar_registro()">Registar</button>
-            </div>
+                <span>
+                    <br><br>
+                    <label for="idp">identificacion</label>
+                    <input type="text" name="id" id="idp" placeholder="id" onblur="Verificar_id()">
+                    <p id="wrongid"></p>
+                </span>
+                <span>
+                    <br><br>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre"  onblur="Verificar_name()">
+                    <p id="wrongname"></p>
+                </span>
+                <span>
+                    <br><br>
+                    <label for="cel">Numero de Telefono</label>
+                    <input type="number" name="cel" id="cel" placeholder="Numero"  onblur="Verificar_cel()">
+                    <p id="wrongcel"></p>
+                </span>
+                <span>
+                    <br><br>
+                    <label for="frecuencia">Dirección</label>
+                    <input type="text" name="Direccion" id="Direccion" placeholder="Dirección" onblur="Verificar_addres()">
+                    <p id="wrongaddres"></p>
+                </span>
+                <span class="bloc">
+                    <br><br>
+                    <button type="button" name="submit" id="submit" class="b4__abrir" onclick="Verificar_registro()">Registar</button>
+                </span>
+            
 
         </div>
     </main>

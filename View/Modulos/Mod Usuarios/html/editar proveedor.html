@@ -244,43 +244,47 @@
     <main class="claseMain">
         <div class="container__Main">
             <h1>Editar Proveedor</h1>
-            <form action="">
-                <label for="name1">Nombre</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>Bavaria</td>
-                    </tr>
-                </table>
-                <input type="text" name="name1" id="name1" placeholder="Nombre" onblur="Verificar_nombre()">
-                <p id="wrongname"></p>
-                <br>
-                <label for="cel">Numero de Telefono</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>3112547895</td>
-                    </tr>
-                </table>
-                <input type="number" name="cel" id="cel" placeholder="Numero" onblur="Verificar_cel()">
-                <p id="wrongcel"></p>
-                <br>
-                <label for="frecuencia">Días que frecuenta:</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>Jueves</td>
-                    </tr>
-                </table>
-                <select name="frecuencia" id="frecuencia" onblur="Verificar_dias()">
-                    <option value="0">Seleccionar</option>
-                    <option value="1">Lunes</option>
-                    <option value="2">Martes</option>
-                    <option value="3">Miercoles</option>
-                    <option value="4">Jueves</option>
-                    <option value="5">Viernes</option>
-                    <option value="6">Sabado</option>
-                    <option value="7">Domingo</option>
-                </select>
-                <p id="wrongfrec"></p>
-                <br>
+            <form action="" class="datos-contenido">
+                <span>
+                    <label for="name1">Nombre</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Bavaria</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="name1" id="name1" placeholder="Nombre" onblur="Verificar_nombre()">
+                    <p id="wrongname"></p>
+                </span>
+                <span>
+                    <label for="cel">Numero de Telefono</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>3112547895</td>
+                        </tr>
+                    </table>
+                    <input type="number" name="cel" id="cel" placeholder="Numero" onblur="Verificar_cel()">
+                    <p id="wrongcel"></p>
+                </span>
+                <span>
+                    <label for="frecuencia">Días que frecuenta:</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Jueves</td>
+                        </tr>
+                    </table>
+                    <select name="frecuencia" id="frecuencia" onblur="Verificar_dias()">
+                        <option value="0">Seleccionar</option>
+                        <option value="1">Lunes</option>
+                        <option value="2">Martes</option>
+                        <option value="3">Miercoles</option>
+                        <option value="4">Jueves</option>
+                        <option value="5">Viernes</option>
+                        <option value="6">Sabado</option>
+                        <option value="7">Domingo</option>
+                    </select>
+                    <p id="wrongfrec"></p>
+                </span>
+                <span>
                 <!--<label for="estado">Estado</label>
                 <table class="casillaedit">
                     <tr>
@@ -293,8 +297,12 @@
                     <option value="2">Inactivo</option>
                 </select>
                 <br>-->
-                <button type="button" name="submit" id="submit" class="b4" onclick="Verificar_registro()">Guardar
+                </span>
+                <span>
+                    <br>
+                    <button type="button" name="submit" id="submit" class="b4__abrir" onclick="Verificar_registro()">Guardar
                         Cambios</button>
+                </span>
             </form>
         </div>
     </main>

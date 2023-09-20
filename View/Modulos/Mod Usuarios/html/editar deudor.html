@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../../css/styleMenuV2.css">
     <link rel="stylesheet" href="../../../css/allStylesPage.css">
     <link rel="shortcut icon" href="../../../img/Logo-Tiendecita_Alemana.jpg" class="favicon">
-    <title>Edit Proveedor</title>
+    <title>Edit Deudor</title>
     <link rel="stylesheet" href="../css/mod-ventas.css">
     <!-- Iconos sacados de la web de fontawesome con mi cuenta personal Angel. -->
     <script src="https://kit.fontawesome.com/7182634b87.js" crossorigin="anonymous"></script>
@@ -244,34 +244,40 @@
     <main class="claseMain">
         <div class="container__Main">
             <h1>Editar Deudor</h1>
-            <form action="">
-                <label for="name">Nombre</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>Francisco Ariztizabal</td>
-                    </tr>
-                </table>
-                <input type="text" name="name" id="name" placeholder="Nombre" onblur="Verificar_name()">
-                <p id="wrongname"></p>
-                <br>
-                <label for="cel">Numero de Telefono</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>3112547895</td>
-                    </tr>
-                </table>
-                <input type="number" name="cel" id="cel" placeholder="Numero" onblur="Verificar_cel()">
-                <p id="wrongcel"></p>
-                <br>
-                <label for="frecuencia">Dirección</label>
-                <table class="casillaedit">
-                    <tr>
-                        <td>cra 25 sur #48a-70</td>
-                    </tr>
-                </table>
-                <input type="text" name="Direccion" id="Direccion" placeholder="Dirección" onblur="Verificar_addres()">
-                <p id="wrongaddres"></p>
-                <br>
+            <form action="" class="datos-contenido">
+                <span>
+                    <label for="name">Nombre</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Francisco Ariztizabal</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="name" id="name" placeholder="Nombre" onblur="Verificar_name()">
+                    <p id="wrongname"></p>
+                </span>
+                
+                <span>
+                    <label for="cel">Numero de Telefono</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>3112547895</td>
+                        </tr>
+                    </table>
+                    <input type="number" name="cel" id="cel" placeholder="Numero" onblur="Verificar_cel()">
+                    <p id="wrongcel"></p>
+                </span>
+                
+                <span>
+                    <label for="frecuencia">Dirección</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>cra 25 sur #48a-70</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="Direccion" id="Direccion" placeholder="Dirección" onblur="Verificar_addres()">
+                    <p id="wrongaddres"></p>
+                </span>
+                <span>
                 <!--<label for="estado">Estado</label>
                 <table class="casillaedit">
                     <tr>
@@ -284,14 +290,18 @@
                     <option value="2">Inactivo</option>
                 </select>
                 <br>-->
-                <button type="button" name="submit" id="submit" class="b4" onclick="Verificar_registro()">Guardar
-                        Cambios</button>
-            </form>
-        </div>
-    </main>
+                </span>
+                <span>
+                    <br>
+                    <button type="button" name="submit" id="submit" class="b4__abrir" onclick="Verificar_registro()">Guardar
+                            Cambios</button>
+                </form>
+            </div>
+        </main>
 
-    <!-- SCRIPTS -->
-    <!-- Iconos sacados de la web de fontawesome con mi cuenta personal Angel. -->
+        <!-- SCRIPTS -->
+        <!-- Iconos sacados de la web de fontawesome con mi cuenta personal Angel. -->
+    </span>
     <script src="https://kit.fontawesome.com/7182634b87.js" crossorigin="anonymous"></script>
     <!-- Iconos sacados de la web de ionic.io/ionicons con mi cuenta personal Angel. -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
