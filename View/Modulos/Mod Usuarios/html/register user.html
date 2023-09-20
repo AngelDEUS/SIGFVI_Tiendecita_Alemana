@@ -245,20 +245,29 @@
         <div class="container__Main">
             <div class="titulo"><h1>Registar Usuario</h1></div>
         <div class="datos-contenido">
-            <label for="name1">Primer Nombre</label>
-            <input type="text" name="name1" id="name1" placeholder="Primer Nombre" onblur="Verificar_nombre1()">
-            <p id="wrongname1"></p>
-            <label for="name2">Segundo Nombre</label>
-            <input type="text" name="name2" id="name2" placeholder="Segundo Nombre" onblur="Verificar_nombre2()">
-            <p id="wrongname2"></p>
-            <br>
+            <span>
+                <label for="name1">Primer Nombre</label>
+                <input type="text" name="name1" id="name1" placeholder="Primer Nombre" onblur="Verificar_nombre1()">
+                <p id="wrongname1"></p>
+            </span>
+            <span>
+                <label for="name2">Segundo Nombre</label>
+                <input type="text" name="name2" id="name2" placeholder="Segundo Nombre" onblur="Verificar_nombre2()">
+                <p id="wrongname2"></p>
+            </span>
+            
+            <span>
             <label for="apell1">Primer Apellido</label>
             <input type="text" name="apell1" id="apell1" placeholder="Primer Apellido" onblur="Verificar_apell1()">
             <p id="wrongapell1"></p>
+            </span>
+            <span>
             <label for="apell2">Segundo Apellido</label>
             <input type="text" name="apell2" id="apell2" placeholder="Segundo Apellido" onblur="Verificar_apell2()">
             <p id="wrongapell2"></p>
-            <br>
+            </span>
+            
+            <span>
             <label for="tipoid">Tipo de Identificación</label>
             <select name="tipoid" id="tipoid" onblur="Verificar_tipoid()">
                 <option value="0">Seleccionar</option>
@@ -268,26 +277,39 @@
                 <option value="4">Tarjeta de identidad</option>
             </select>
             <p id="wrongtipoid"></p>
-            
+            </span>
+
+            <span>
             <label for="numid">Número de Identificación</label>
             <input type="text" name="numid" id="numid" placeholder="Identificación" onblur="Verificar_id()">
             <p id="wrongid"></p>
-            <br>
+            </span>
+            
+            <span>
             <label for="cel">Numero de Telefono</label>
             <input type="number" name="cel" id="cel" placeholder="Numero" onblur="Verificar_tel()">
             <p id="wrongtel"></p>
+            </span>
+            <span>
             <label for="email">Correo Electronico</label>
             <input type="email" name="email" id="email" placeholder="Correo" onblur="Verificar_email()">
             <p id="wrongemail"></p>
-            <br>
+            </span>
+            
+            <span>
             <label for="password">Contraseña</label>
             <input type="password" name="password" id="password" placeholder="Contraseña" onkeyup="Verificar_password()" onblur="Verificar_password()">
             <p id="wrongpass"></p>
+            </span>
+            <span>
             <label for="passwordcheck">Confirmar Contraseña</label>
             <input type="password" name="passwordcheck" id="passwordcheck" placeholder="Confirmar" onkeyup="Verificar_passwordcheck()" onblur="Verificar_passwordcheck()">
             <p id="wrongcheck"></p>
-            <br>
+            </span>
+            <span class="bloc">
+                <br>
             <input type="button" value="Registar" class="b4__abrir" name="submit" id="submit" onclick="Verificar_registro()">
+            </span>
         </div>
 
         </div>

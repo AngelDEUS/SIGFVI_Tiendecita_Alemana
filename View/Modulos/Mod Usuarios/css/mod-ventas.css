@@ -380,7 +380,7 @@ a{
     padding-right: 4%;
 }
 .b4{
-    background-color: #4bcb03;
+    background-color: #2dc55a;;
     padding: 1.5%;
 }
 
@@ -391,13 +391,15 @@ a{
     cursor: pointer;
 }
 .b4__abrir{
-    background-color: #4bcb03;
+    background-color: #2dc55a;;
     cursor: pointer;
     padding: 0.75%;
     padding-left: 4%;
     padding-right: 4%;
     border: none;
     border-radius: 35px;
+    margin-left: 25%;
+    width: 100%;
 }
 
 .b1__abrir:hover,.b4__abrir:hover {
@@ -482,6 +484,7 @@ a{
     width: 20%;
     color: rgb(72, 55, 173);
 }
-/*.datos-contenido{
-    justify-content: center;
+.datos-contenido{
+    display: grid;
+    grid-template-columns:1fr 1fr;
 }

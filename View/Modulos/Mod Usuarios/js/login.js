@@ -15,7 +15,7 @@ function Validar(){
 			background:'#252327'            
 
         }).then(function() {
-            window.location.href="../../../../../../Santiago/Proyecto SIGFVI/Proyecto SIGFVI/Vista/Modulos/Modulo informes/html/index-informes.html"
+            window.location.href="../html/tabla usuarios.html"
         })
         
     }else{
