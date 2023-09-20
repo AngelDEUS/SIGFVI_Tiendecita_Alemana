@@ -239,27 +239,251 @@
 
     <main class="claseMain">
         <div class="container__Main">
-            <div>
-                <h1>Facturas</h1>
-                <p>
-                    Este es el modulo encargado visualizar las <s>facturas</s> de las <s>ventas</s> y generar las
-                    facturas.
-                </p><br>
-                <hr>
-            </div>
+            <h1>Empleados</h1>
+        <p>
+            Esta parte del modulo muestra los empleados del sistema y permite su respectivo registro y actualizacion.
+        </p><br>
+        <hr>
 
-            <section class="sec__main">
-                <div class="venta">
-                    <div class="container">
-                        xD
-
+        <section class="mod__Ventas">
+            <div class="venta">
+                <div class="container">
+                    <div class="button-container">
+                        <form class="form">
+                            <input type="search" id="search" name="search" placeholder="buscar">
+                            <a href="./register user.html"><button type="button" class="b4__abrir" id="lanzar-modal" name="agregar">Agregar</button></a>
+                        </form>
                     </div>
                 </div>
-
+            </div>
+            <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <h2><input type="checkbox"></h2>
+                        </th>
+                        <th>
+                            <h2>N°</h2>
+                        </th>
+                        <th>
+                            <h2>Nombre</h2>
+                        </th>
+                        <th>
+                            <h2>id</h2>
+                        </th>
+                        <th>
+                            <h2>Contraseña</h2>
+                        </th>
+                        <th>
+                            <h2>Telefono</h2>
+                        </th>
+                        <th>
+                            <h2>Correo</h2>
+                        </th>
+                        <th>
+                            <h2>Estado</h2>
+                        </th>
+                        <th>
+                            <h2>Acciones</h2>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h3><input type="checkbox"></h3>
+                        </td>
+                        <td>
+                            <h3>1</h3>
+                        </td>
+                        <td>
+                            <h3>Francisco Ariztizabal</h3>
+                        </td>
+                        <td>
+                            <h3>1425369874</h3>
+                        </td>
+                        <td>
+                            <h3>**********</h3>
+                        </td>
+                        <td>
+                            <h3>3112547895</h3>
+                        </td>
+                        <td>
+                            <h3>Fra.aris@gmail.com</h3>
+                        </td>
+                        <td>
+                            <h3>Activo</h3>
+                        </td>
+                        <td>
+                            <h3><button type="button" id="edit" name="edit" class="b1"><a
+                                        href="./editar user.html">Editar</a></button><button type="button"
+                                    id="delete" name="delete" class="b2" onclick="confirmDelete()">Borrar</button></h3>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td>
+                                <h3><input type="checkbox"></h3>
+                            </td>
+                            <td>
+                                <h3>2</h3>
+                            </td>
+                            <td>
+                                <h3>Francisco Ariztizabal</h3>
+                            </td>
+                            <td>
+                                <h3>1425369874</h3>
+                            </td>
+                            <td>
+                                <h3>**********</h3>
+                            </td>
+                            <td>
+                                <h3>3112547895</h3>
+                            </td>
+                            <td>
+                                <h3>Fra.aris@gmail.com</h3>
+                            </td>
+                            <td>
+                                <h3>Activo</h3>
+                            </td>
+                            <td>
+                                <h3><button type="button" id="edit" name="edit" class="b1"><a
+                                            href="./editar user.html">Editar</a></button><button type="button"
+                                        id="delete" name="delete" class="b2" onclick="confirmDelete()">Borrar</button></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3><input type="checkbox"></h3>
+                            </td>
+                            <td>
+                                <h3>3</h3>
+                            </td>
+                            <td>
+                                <h3>Francisco Ariztizabal</h3>
+                            </td>
+                            <td>
+                                <h3>1425369874</h3>
+                            </td>
+                            <td>
+                                <h3>**********</h3>
+                            </td>
+                            <td>
+                                <h3>3112547895</h3>
+                            </td>
+                            <td>
+                                <h3>Fra.aris@gmail.com</h3>
+                            </td>
+                            <td>
+                                <h3>Activo</h3>
+                            </td>
+                            <td>
+                                <h3><button type="button" id="edit" name="edit" class="b1"><a
+                                            href="./editar user.html">Editar</a></button><button type="button"
+                                        id="delete" name="delete" class="b2" onclick="confirmDelete()">Borrar</button></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3><input type="checkbox"></h3>
+                            </td>
+                            <td>
+                                <h3>4</h3>
+                            </td>
+                            <td>
+                                <h3>Francisco Ariztizabal</h3>
+                            </td>
+                            <td>
+                                <h3>1425369874</h3>
+                            </td>
+                            <td>
+                                <h3>**********</h3>
+                            </td>
+                            <td>
+                                <h3>3112547895</h3>
+                            </td>
+                            <td>
+                                <h3>Fra.aris@gmail.com</h3>
+                            </td>
+                            <td>
+                                <h3>Inactivo</h3>
+                            </td>
+                            <td>
+                                <h3><button type="button" id="edit" name="edit" class="b1"><a
+                                            href="./editar user.html">Editar</a></button><button type="button"
+                                        id="delete" name="delete" class="b2" onclick="confirmDelete()">Borrar</button></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3><input type="checkbox"></h3>
+                            </td>
+                            <td>
+                                <h3>5</h3>
+                            </td>
+                            <td>
+                                <h3>Francisco Ariztizabal</h3>
+                            </td>
+                            <td>
+                                <h3>1425369874</h3>
+                            </td>
+                            <td>
+                                <h3>**********</h2>
+                            </td>
+                            <td>
+                                <h3>3112547895</h2>
+                            </td>
+                            <td>
+                                <h3>Fra.aris@gmail.com</h3>
+                            </td>
+                            <td>
+                                <h3>Activo</h2>
+                            </td>
+                            <td>
+                                <h3><button type="button" id="edit" name="edit" class="b1"><a
+                                            href="./editar user.html">Editar</a></button><button type="button"
+                                        id="delete" name="delete" class="b2" onclick="confirmDelete()">Borrar</button></h3>
+                            </td>
+                </table>
             </section>
 
+            <section class="modal">
+                <div class="modal__container">
+                    <h1>Registar Usuario</h1>
+                    <form action="" id="formulario">
+                        <label for="name1">Primer Nombre</label>
+                        <input type="text" name="name1" id="name1" placeholder="Primer Nombre" required>
+                        <label for="name2">Segundo Nombre</label>
+                        <input type="text" name="name2" id="name2" placeholder="Segundo Nombre" required>
+                        <br>
+                        <label for="apell1">Primer Apellido</label>
+                        <input type="text" name="apell1" id="apell1" placeholder="Primer Apellido" required>
+                        <label for="apell2">Segundo Apellido</label>
+                        <input type="text" name="apell2" id="apell2" placeholder="Segundo Apellido" required>
+                        <br>
+                        <label for="tipoid">Tipo de Identificación</label>
+                        <select name="tipoid" id="tipoid">
+                            <option value="0">Seleccionar</option>
+                            <option value="1">Cedula de Ciudadania</option>
+                            <option value="2">Cedula Extranjera</option>
+                            <option value="3">Pasaporte</option>
+                            <option value="4">Tarjeta de identidad</option>
+                        </select>
+                        <label for="numid">Número de Identificación</label>
+                        <input type="text" name="numid" id="numid" placeholder="Identificación" required>
+                        <br>
+                        <label for="cel">Numero de Telefono</label>
+                        <input type="number" name="cel" id="cel" placeholder="Numero" required>
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" name="email" id="email" placeholder="Correo" required>
+                        <br>
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                        <br>
+                        <button type="submit" name="Registar" id="ocultar-modal" class="modal__close">Registar</button>
+                    </form>
+                </div>
             </section>
-
         </div>
     </main>
 
@@ -271,6 +495,8 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- Funciones del menu -->
     <script src="../../../js/scriptMenu2.js"></script>
+    <!--Validaciones↓--> 
+    <script src="../js/tablas.js"></script>
 </body>
 
 </html>
