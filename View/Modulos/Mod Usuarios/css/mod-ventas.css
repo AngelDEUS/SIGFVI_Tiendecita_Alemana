@@ -1,0 +1,487 @@
+.mod__Ventas {
+    padding: 20px;
+}
+
+
+.mod__Ventas,
+.btn-Total {
+    border-radius: 15px;
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+body::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.3rem;
+    background-color: #aea7bb98;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #f49250;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+
+h1 {
+    padding-bottom: 20px;
+}
+
+/* Estilo de tablas */
+/*
+.product_table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    color: rgb(97, 91, 100);
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+thead,
+tfoot {
+    background-color: rgb(255, 233, 211);
+}
+*/
+/*  Pading: arriba | izquierda y derecha | abajo    */
+/*
+th {
+    padding: 10px 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+td {
+    padding: 15px;
+    border-bottom: solid 1px rgb(196, 179, 163);
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background-color: aliceblue;
+}
+*/
+
+/* -------- New Table Data -------- */
+
+/* NONE
+main.table {
+    width: 82vh;
+    height: 90vh;
+    background-color: #32bfdb75;
+
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+*/
+
+.table__body {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #ffffff;
+    margin: .8rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+    transition: .3s;
+}
+
+.table__body::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+table {
+    width: 100%;
+
+}
+
+td img {
+    width: 36px;
+    height: 36px;
+    margin-right: 5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+thead th {
+    color: #7c7879;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fcefda;
+}
+
+tbody {
+    color: #b3aeb0;
+    transition: 0.3s;
+}
+
+tfoot {
+    color: #7c7879;
+    background-color: #fcefda;
+    display: flex;
+    justify-content: space-between;
+}
+
+tbody tr:nth-child(even) {
+    text-align: left;
+    background-color: #f0eff0;
+}
+
+tbody tr:hover {
+    color: rgb(78, 73, 83);
+    background-color: rgba(77, 66, 87, 0.151);
+}
+
+/* Estados*/
+
+.status {
+    text-align: center;
+    padding: .4rem 0;
+    border-radius: 2rem;
+}
+
+.status.activo {
+    background-color: #86e49d;
+    color: #006b21;
+}
+
+.status.inactivo {
+    background-color: #ff8989;
+    color: #a00d0d;
+}
+
+.status.stock-bajo {
+    background-color: #ffa26c;
+    color: #833f20;
+}
+
+/* cosas */
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+/* --------- Estilo de los botones ---------  */
+.options img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.btn3 img {
+    width: 40px;
+    margin-right: 10px;
+
+}
+
+.btn1,
+.btn2 {
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.options {
+    flex: 4;
+}
+
+.btn1 {
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #f49250;
+}
+
+.btn2 {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #ba55e4;
+}
+
+.btn3 {
+    font-size: 30px;
+    margin-left: 15px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    flex: 3;
+    background-color: #8bdf46;
+    padding-top: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 30px;
+}
+
+button:hover {
+    opacity: 80%;
+}
+
+/* Total estilo */
+
+.btn-Total {
+    margin-left: 15px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 10px;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+
+.btn-Total .total {
+    font-weight: 600;
+    color: #7c7a80;
+    font-size: 25px;
+}
+
+.btn-Total .calc-T {
+    font-weight: 600;
+    font-size: 35px;
+    color: #4ec100;
+}
+
+/* Parte superior del formulario */
+input[type=search] {
+    width: 50%;
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+input[type=number],input[type=text],
+input[type=password],input[type=email],select {
+    width: 20%;
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin: 1%;
+}
+
+input[type=submit] {
+    width: 20%;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    border: none;
+}
+
+/* Parte superior del formulario */
+.container {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+
+.form {
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.button-container,contenedorm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+.button-container h4 {
+    font-weight: 600;
+    color: #e2e6e8;
+    margin-bottom: 10px;
+    margin-right: 35px;
+}
+
+.button-container button,.b2,.b1,.b4 {
+    margin-right: 10px;
+    border: none;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+
+.button-container button img {
+    width: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*- Colores personalizados -*/
+.b1 {
+    background-color: #32c0db;
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.b2 {
+    background-color: #f57483;
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.b3 {
+    background-color: #b44b4b;
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.b4{
+    background-color: #4bcb03;
+    padding: 1.5%;
+}
+
+/* ---------  modal Interacciones */
+/* ---> boton modal*/
+.b1__abrir {
+    background-color: #32c0db;
+    cursor: pointer;
+}
+.b4__abrir{
+    background-color: #4bcb03;
+    cursor: pointer;
+    padding: 0.75%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border: none;
+    border-radius: 35px;
+}
+
+.b1__abrir:hover,.b4__abrir:hover {
+    opacity: 50%;
+}
+
+.b1__abrir:active,.b4__abrir:active {
+    color: #32c0db;
+    background-color: white;
+    border: 1px solid #7c7a80;
+}
+
+
+/* ---> modal Style */
+
+/*
+    video modal
+    https://www.youtube.com/watch?v=Iaw9rFopXPY
+*/
+.modal {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .4s;
+
+    /* Filtro de desenfoque*/
+    backdrop-filter: blur(7px);
+}
+
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .4s;
+}
+
+.modal__close {
+    text-decoration: none;
+    color: white;
+    background-color: #4bcb03;
+    padding: 1em 3em;
+    border-radius: 15px;
+    display: inline-block;
+    font-weight: 300;
+    transition: 0.2s;
+    text-transform: capitalize;
+}
+
+.modal__close:hover {
+    opacity: 50%;
+}
+
+.modal__close:active {
+    color: #32c0db;
+    background-color: white;
+    border: 1px solid #7c7a80;
+}
+
+.modal__container {
+    margin: auto;
+    width: 60%;
+    height: 95%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+
+
+}
+.montocasilla,.casillaedit{
+    border-radius: 35px;
+    text-align: center;
+    width: 20%;
+    color: rgb(72, 55, 173);
+}
+/*.datos-contenido{
+    justify-content: center;
+}

@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="../../../css/styleMenuV2.css">
     <link rel="stylesheet" href="../../../css/allStylesPage.css">
     <link rel="shortcut icon" href="../../../img/Logo-Tiendecita_Alemana.jpg" class="favicon">
-    <title>IndexV2</title>
+    <title>Deudores</title>
+    <link rel="stylesheet" href="../css/mod-ventas.css">
+    <!-- Iconos sacados de la web de fontawesome con mi cuenta personal Angel. -->
+    <script src="https://kit.fontawesome.com/7182634b87.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -41,7 +45,7 @@
         <div>
             <div class="nombre-pagina">
                 <img src="../../../img/Logo-Tiendecita_Alemana.jpg" class="logo_sigfvi" id="logo-menu" alt="log">
-                <span>Tiendecita Alemana</span>5
+                <span>Tiendecita Alemana</span>
             </div>
             <button class="boton">
                 <ion-icon name="add-outline"></ion-icon>
@@ -239,9 +243,10 @@
 
     <main class="claseMain">
         <div class="container__Main">
-            <h1>Empleados</h1>
+            <h1>Deudores</h1>
         <p>
-            Esta parte del modulo muestra los empleados del sistema y permite su respectivo registro y actualizacion.
+            Esta pestaña muestra los deudores de la tienda los cuales estaran registrados aqui. Tambien se permite su
+            actualizacion y edicion respectiva
         </p><br>
         <hr>
 
@@ -251,76 +256,81 @@
                     <div class="button-container">
                         <form class="form">
                             <input type="search" id="search" name="search" placeholder="buscar">
-                            <a href="./register user.html"><button type="button" class="b4__abrir" id="lanzar-modal" name="agregar">Agregar</button></a>
+                            
+                            <a href="./register deudor.html"><button type="button" class="b4" id="lanzar-modal" name="agregar">Agregar</button></a>
+
                         </form>
                     </div>
                 </div>
             </div>
             <section class="table__body">
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            <h2><input type="checkbox"></h2>
-                        </th>
-                        <th>
-                            <h2>N°</h2>
-                        </th>
-                        <th>
-                            <h2>Nombre</h2>
-                        </th>
-                        <th>
-                            <h2>id</h2>
-                        </th>
-                        <th>
-                            <h2>Contraseña</h2>
-                        </th>
-                        <th>
-                            <h2>Telefono</h2>
-                        </th>
-                        <th>
-                            <h2>Correo</h2>
-                        </th>
-                        <th>
-                            <h2>Estado</h2>
-                        </th>
-                        <th>
-                            <h2>Acciones</h2>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <h3><input type="checkbox"></h3>
-                        </td>
-                        <td>
-                            <h3>1</h3>
-                        </td>
-                        <td>
-                            <h3>Francisco Ariztizabal</h3>
-                        </td>
-                        <td>
-                            <h3>1425369874</h3>
-                        </td>
-                        <td>
-                            <h3>**********</h3>
-                        </td>
-                        <td>
-                            <h3>3112547895</h3>
-                        </td>
-                        <td>
-                            <h3>Fra.aris@gmail.com</h3>
-                        </td>
-                        <td>
-                            <h3>Activo</h3>
-                        </td>
-                        <td>
-                            <h3><button type="button" id="edit" name="edit" class="b1"><a
-                                        href="./editar user.html">Editar</a></button><button type="button"
-                                    id="delete" name="delete" class="b2" onclick="confirmDelete()">Borrar</button></h3>
-                        </td>
-                    </tr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <h2><input type="checkbox"></h2>
+                            </th>
+                            <th>
+                                <h2>N°</h2>
+                            </th>
+                            <th>
+                                <h2>id</h2>
+                            </th>
+                            <th>
+                                <h2>Nombre</h2>
+                            </th>
+                            <th>
+                                <h2>Dirección</h2>
+                            </th>
+                            <th>
+                                <h2>Telefono</h2>
+                            </th>
+                            <th>
+                                <h2>Deuda</h2>
+                            </th>
+                            <th>
+                                <h2>Estado</h2>
+                            </th>
+                            <th>
+                                <h2>Acciones</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h3><input type="checkbox"></h3>
+                            </td>
+                            <td>
+                                <h3>1</h3>
+                            </td>
+                            <td>
+                                <h3>001</h3>
+                            </td>
+                            <td>
+                                <h3>Francisco Ariztizabal</h3>
+                            </td>
+                            <td>
+                                <h3>cra 25 sur #48a-70</h3>
+                            </td>
+                            <td>
+                                <h3>3112547895</h3>
+                            </td>
+                            <td>
+                                <h2>$50000</h2>
+                            </td>
+                            <td>
+                                <h3>Activo</h3>
+                            </td>
+                            <td>
+                                <h3><button type="button" id="edit" name="edit" class="b1"><a
+                                            href="./editar deudor.html">Editar</a></button><button type="button"
+                                        id="sumar" name="sumar" class="b1"><a
+                                            href="./sumar deudor.html">Sumar</a></button><button type="button" id="pay"
+                                        name="pay" class="b4"><a href="./pagar deudor.html">Pagar</a></button><button
+                                        type="button" id="edit" name="edit" class="b2" onclick="confirmDelete()">Eliminar</button></h3>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
                                 <h3><input type="checkbox"></h3>
@@ -329,27 +339,30 @@
                                 <h3>2</h3>
                             </td>
                             <td>
+                                <h3>002</h3>
+                            </td>
+                            <td>
                                 <h3>Francisco Ariztizabal</h3>
                             </td>
                             <td>
-                                <h3>1425369874</h3>
-                            </td>
-                            <td>
-                                <h3>**********</h3>
+                                <h3>cra 25 sur #48a-70</h3>
                             </td>
                             <td>
                                 <h3>3112547895</h3>
                             </td>
                             <td>
-                                <h3>Fra.aris@gmail.com</h3>
+                                <h2>$50000</h2>
                             </td>
                             <td>
                                 <h3>Activo</h3>
                             </td>
                             <td>
                                 <h3><button type="button" id="edit" name="edit" class="b1"><a
-                                            href="./editar user.html">Editar</a></button><button type="button"
-                                        id="delete" name="delete" class="b2" onclick="confirmDelete()">Borrar</button></h3>
+                                            href="./editar deudor.html">Editar</a></button><button type="button"
+                                        id="sumar" name="sumar" class="b1"><a
+                                            href="./sumar deudor.html">Sumar</a></button><button type="button" id="pay"
+                                        name="pay" class="b4"><a href="./pagar deudor.html">Pagar</a></button><button
+                                        type="button" id="edit" name="edit" class="b2" onclick="confirmDelete()">Eliminar</button></h3>
                             </td>
                         </tr>
                         <tr>
@@ -360,27 +373,30 @@
                                 <h3>3</h3>
                             </td>
                             <td>
+                                <h3>003</h3>
+                            </td>
+                            <td>
                                 <h3>Francisco Ariztizabal</h3>
                             </td>
                             <td>
-                                <h3>1425369874</h3>
-                            </td>
-                            <td>
-                                <h3>**********</h3>
+                                <h3>cra 25 sur #48a-70</h3>
                             </td>
                             <td>
                                 <h3>3112547895</h3>
                             </td>
                             <td>
-                                <h3>Fra.aris@gmail.com</h3>
+                                <h2>$50000</h2>
                             </td>
                             <td>
                                 <h3>Activo</h3>
                             </td>
                             <td>
                                 <h3><button type="button" id="edit" name="edit" class="b1"><a
-                                            href="./editar user.html">Editar</a></button><button type="button"
-                                        id="delete" name="delete" class="b2" onclick="confirmDelete()">Borrar</button></h3>
+                                            href="./editar deudor.html">Editar</a></button><button type="button"
+                                        id="sumar" name="sumar" class="b1"><a
+                                            href="./sumar deudor.html">Sumar</a></button><button type="button" id="pay"
+                                        name="pay" class="b4"><a href="./pagar deudor.html">Pagar</a></button><button
+                                        type="button" id="edit" name="edit" class="b2" onclick="confirmDelete()">Eliminar</button></h3>
                             </td>
                         </tr>
                         <tr>
@@ -391,27 +407,30 @@
                                 <h3>4</h3>
                             </td>
                             <td>
+                                <h3>004</h3>
+                            </td>
+                            <td>
                                 <h3>Francisco Ariztizabal</h3>
                             </td>
                             <td>
-                                <h3>1425369874</h3>
-                            </td>
-                            <td>
-                                <h3>**********</h3>
+                                <h3>cra 25 sur #48a-70</h3>
                             </td>
                             <td>
                                 <h3>3112547895</h3>
                             </td>
                             <td>
-                                <h3>Fra.aris@gmail.com</h3>
+                                <h2>$50000</h2>
                             </td>
                             <td>
                                 <h3>Inactivo</h3>
                             </td>
                             <td>
                                 <h3><button type="button" id="edit" name="edit" class="b1"><a
-                                            href="./editar user.html">Editar</a></button><button type="button"
-                                        id="delete" name="delete" class="b2" onclick="confirmDelete()">Borrar</button></h3>
+                                            href="./editar deudor.html">Editar</a></button><button type="button"
+                                        id="sumar" name="sumar" class="b1"><a
+                                            href="./sumar deudor.html">Sumar</a></button><button type="button" id="pay"
+                                        name="pay" class="b4"><a href="./pagar deudor.html">Pagar</a></button><button
+                                        type="button" id="edit" name="edit" class="b2" onclick="confirmDelete()">Eliminar</button></h3>
                             </td>
                         </tr>
                         <tr>
@@ -422,28 +441,35 @@
                                 <h3>5</h3>
                             </td>
                             <td>
+                                <h3>005</h3>
+                            </td>
+                            <td>
                                 <h3>Francisco Ariztizabal</h3>
                             </td>
                             <td>
-                                <h3>1425369874</h3>
-                            </td>
-                            <td>
-                                <h3>**********</h2>
+                                <h3>cra 25 sur #48a-70</h2>
                             </td>
                             <td>
                                 <h3>3112547895</h2>
                             </td>
                             <td>
-                                <h3>Fra.aris@gmail.com</h3>
+                                <h2>$50000</h2>
                             </td>
                             <td>
                                 <h3>Activo</h2>
                             </td>
                             <td>
                                 <h3><button type="button" id="edit" name="edit" class="b1"><a
-                                            href="./editar user.html">Editar</a></button><button type="button"
-                                        id="delete" name="delete" class="b2" onclick="confirmDelete()">Borrar</button></h3>
+                                            href="./editar deudor.html">Editar</a></button><button type="button"
+                                        id="sumar" name="sumar" class="b1"><a
+                                            href="./sumar deudor.html">Sumar</a></button><button type="button" id="pay"
+                                        name="pay" class="b4"><a href="./pagar deudor.html">Pagar</a></button><button
+                                        type="button" id="edit" name="edit" class="b2" onclick="confirmDelete()">Eliminar</button></h3>
                             </td>
+                        </tr>
+                </table>
+
+                </tbody>
                 </table>
             </section>
 
@@ -451,37 +477,17 @@
                 <div class="modal__container">
                     <h1>Registar Usuario</h1>
                     <form action="" id="formulario">
-                        <label for="name1">Primer Nombre</label>
-                        <input type="text" name="name1" id="name1" placeholder="Primer Nombre" required>
-                        <label for="name2">Segundo Nombre</label>
-                        <input type="text" name="name2" id="name2" placeholder="Segundo Nombre" required>
-                        <br>
-                        <label for="apell1">Primer Apellido</label>
-                        <input type="text" name="apell1" id="apell1" placeholder="Primer Apellido" required>
-                        <label for="apell2">Segundo Apellido</label>
-                        <input type="text" name="apell2" id="apell2" placeholder="Segundo Apellido" required>
-                        <br>
-                        <label for="tipoid">Tipo de Identificación</label>
-                        <select name="tipoid" id="tipoid">
-                            <option value="0">Seleccionar</option>
-                            <option value="1">Cedula de Ciudadania</option>
-                            <option value="2">Cedula Extranjera</option>
-                            <option value="3">Pasaporte</option>
-                            <option value="4">Tarjeta de identidad</option>
-                        </select>
-                        <label for="numid">Número de Identificación</label>
-                        <input type="text" name="numid" id="numid" placeholder="Identificación" required>
-                        <br>
+                        <label for="name1">Nombre</label>
+                        <input type="text" name="name1" id="name1" placeholder="Nombre" required>
                         <label for="cel">Numero de Telefono</label>
                         <input type="number" name="cel" id="cel" placeholder="Numero" required>
-                        <label for="email">Correo Electronico</label>
-                        <input type="email" name="email" id="email" placeholder="Correo" required>
                         <br>
-                        <label for="password">Contraseña</label>
-                        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                        <label for="Dirección">Dirección</label>
+                        <input type="text" name="Dirección" id="dirección" placeholder="Dirección">
                         <br>
-                        <button type="submit" name="Registar" id="ocultar-modal" class="modal__close">Registar</button>
+                        <button type="submit" name="submit" id="ocultar-modal" class="modal__close">Registar</button>
                     </form>
+
                 </div>
             </section>
         </div>
@@ -500,3 +506,6 @@
 </body>
 
 </html>
+
+
+
