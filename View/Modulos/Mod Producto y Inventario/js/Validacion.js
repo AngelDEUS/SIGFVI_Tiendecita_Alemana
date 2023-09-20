@@ -17,7 +17,6 @@ function validacion() {
     }else{
         document.getElementById('val-n-producto').innerHTML ='';
     }
-
     if(T_Producto === ""){
         document.getElementById('val-t-producto').innerHTML ='no dejar celdas en blanco';
     }else{
@@ -58,9 +57,19 @@ function validacion() {
     }else{
         document.getElementById('val-proveedor').innerHTML ='';
     }
-    if(!Nombre ==="" && !T_Producto ==="" && !C_Neto ==="" && !T_Neto ==="" && !C_unidades ==="" && !Codigo ==="" && !P_Compra ==="" && !P_Venta ==="" && !Fecha_Ven ==="" && !proveedor ===""){
-        console.log('paso');
-    }else{
-        console.log('else');
+    if (!(Nombre === "" || T_Producto === "" || C_Neto === "" || T_Neto === "" || C_unidades === "" || Codigo === "" || P_Compra === "" || P_Venta === "" || Fecha_Ven === "" || proveedor === "")) {
+        alert('¡Producto registrado correctamente!')
+    } else {
     }
+
+}
+
+function alerta(){
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Your work has been saved',
+        showConfirmButton: false,
+        timer: 1500
+      })
 }

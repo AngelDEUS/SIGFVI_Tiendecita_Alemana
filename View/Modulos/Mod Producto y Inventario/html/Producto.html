@@ -15,6 +15,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!--SweetAlert-->
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
     
 </head>
 
@@ -102,7 +104,7 @@
                 <!-- Boton Inventario -->
                 <div class="list__item">
                     <div class="list__button list__button--click">
-                        <a href="#">
+                        <a href="Inventario.html">
                             <ion-icon name="cube"></ion-icon>
                             <span>Inventario</span>
                             <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
@@ -111,20 +113,9 @@
 
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">
+                            <a href="Producto.html" class="nav_link nav__link--inside">
                                 <div class="sub-Closed"></div>
-                                <span>Inventario 1</span>
-                            </a>
-                        </li>
-                        <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">
-                                <span>Inventario 2</span>
-                            </a>
-                        </li>
-                        <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">
-                                <div class="sub-Closed"></div>
-                                <span>Inventario 3</span>
+                                <span>Producto</span>
                             </a>
                         </li>
                     </ul>
@@ -339,7 +330,7 @@
                                 </div>
                               </div>
                               <div class="col-12 d-md-flex justify-content-md-end">
-                                <button class="btn btn-dark" type="button" onclick="validacion()">Registar Producto</button>
+                                <button class="btn btn-dark" type="submit" onclick="validacion()">Registar Producto</button>
                               </div>
                         </form>
                     </div>
