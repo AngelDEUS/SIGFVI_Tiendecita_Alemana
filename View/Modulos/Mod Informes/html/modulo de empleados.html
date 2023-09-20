@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleMenuV2.css">
+    <link rel="stylesheet" href="../../../css/allStylesPage.css">
+    <link rel="shortcut icon" href="../../../img/Logo-Tiendecita_Alemana.jpg" class="favicon">
+    <title>Informe</title>
+    <link rel="stylesheet" href="../css/diseño.css">
+    <!-- Iconos sacados de la web de fontawesome con mi cuenta personal Angel. -->
+    <script src="https://kit.fontawesome.com/7182634b87.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Iconos sacados de la web de fontawesome con mi cuenta personal Angel. -->
+    <script src="https://kit.fontawesome.com/7182634b87.js" crossorigin="anonymous"></script>
+    <title>Botón de gráfico circular</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="icon__menu">
+            <i class="fa-solid fa-bars" id="btn_open"></i>
+            <img src="../../../img/Logo-SIGFVI.png" class="logo_sigfvi-2" id="logo-sigfvi-top" alt="log">
+        </div>
+        <!--
+        <div class="navbar-top">
+            <div class="image">
+                <img src="./img/Iconos/user-icono-PP.png" alt="Imagen">
+            </div>
+            <div class="txt-container">
+                <p class="rol">Administrador</p>
+                <p class="name">Miguel Angel</p>
+            </div>
+            <img src="./img/Iconos/list.png" class="image-left" alt="abajo">
+        </div>
+        -->
+    </header>
+
+    <!-- Menu lateral -->
+    <div class="menu">
+        <ion-icon name="menu"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral ">
+        <div>
+            <div class="nombre-pagina">
+                <img src="../../../img/Logo-Tiendecita_Alemana.jpg" class="logo_sigfvi" id="logo-menu" alt="log">
+                <span>Tiendecita Alemana</span>5
+            </div>
+            <button class="boton">
+                <ion-icon name="add-outline"></ion-icon>
+                <span>Nueva Venta</span>
+            </button>
+        </div>
+
+        <!-- Submenu-->
+        <nav class="navegacion">
+            <ul>
+
+                <!-- Boton INICIO -->
+                <li>
+                    <a href="#">
+                        <ion-icon name="home"></ion-icon>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+
+                <!-- Botón Gestión de Usuarios -->
+                <div class="list__item">
+                    <div class="list__button list__button--click">
+                        <a href="#">
+                            <ion-icon name="person"></ion-icon>
+                            <span>Gestión de Usuarios</span>
+                            <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>G1 User</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <span>G2 User</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>G3 User</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Inventario -->
+                <div class="list__item">
+                    <div class="list__button list__button--click">
+                        <a href="#">
+                            <ion-icon name="cube"></ion-icon>
+                            <span>Inventario</span>
+                            <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Inventario 1</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <span>Inventario 2</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Inventario 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Ventas y facturacion -->
+                <div class="list__item">
+                    <div class="list__button list__button--click">
+                        <a href="#">
+                            <ion-icon name="cash"></ion-icon>
+                            <span>Ventas y facturacion</span>
+                            <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Venta 1</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <span>Venta 2</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Venta 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Informes -->
+                <div class="list__item">
+                    <div class="list__button list__button--click">
+                        <a href="#">
+                            <ion-icon name="reader"></ion-icon>
+                            <span>Informes</span>
+                            <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Informe 1</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <span>Informe 2</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Informe 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Ayuda -->
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-cat"></i>
+                        <span>Ayuda</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <!-- Separador del menu -->
+            <div class="linea"></div>
+            <!-- Info del usuario menu-->
+            <div class="opciones-usuario">
+                <ul class="navegacion usu">
+                    <!-- Boton Configuracion -->
+                    <li>
+                        <a href="#">
+                            <ion-icon name="cog"></ion-icon>
+                            <span>Configuración</span>
+                        </a>
+                    </li>
+                    <!-- Boton Cerrar Sesión -->
+                    <li>
+                        <a href="#">
+                            <ion-icon name="log-out"></ion-icon>
+                            <span>Cerrar Sesión</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="usuario">
+                <img src="../../../img/Usuarios/Login-User-1.jpg" alt="img-User">
+
+                <div class="info-usuario">
+                    <div class="nombre-email">
+                        <span class="nombre">Administrador</span>
+                        <span class="email">Miguel Angel Ayala</span>
+                    </div>
+                    <ion-icon name="ellipsis-vertical"></ion-icon>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+     <!-- Contenido General de la Pagina -->
+    <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  -->
+
+    <main class="claseMain">
+        <div class="container__Main">
+            <div>
+                <h1>Informe de Empleados</h1>
+                <p>
+                    Este es el modulo encargado de realizar los <s>Informes de los empleados</s> para generar un reporte o control de ellos.
+                </p><br>
+                <hr>
+            </div>
+
+            <section class="sec__main">
+                <div class="venta">
+                    <div class="container">
+                    </div>
+                </div>
+                <body>
+                    <h2><center>Informe Empleados</center></h2>
+  
+  <table>
+        <thead>
+          <tr>
+            <th><center><input type="checkbox"></center></th>
+            <th>Nombres y Apellidos</th>
+            <th>Ventas Realizadas</th>
+            <th>Dias trabajados:<br><label for="fecha-inicio">Fecha de inicio:</label>
+              <input type="date" id="fecha-inicio" name="fecha-inicio">
+              <br>
+              <label for="fecha-fin">Fecha de fin:</label>
+              <input type="date" id="fecha-fin" name="fecha-fin">
+              <button onclick="mostrarRango()">Enter</button>
+              <script>
+                function mostrarRango() {
+                  var fechaInicio = document.getElementById("fecha-inicio").value;
+                  var fechaFin = document.getElementById("fecha-fin").value;
+            
+                  alert("Fecha de inicio: " + fechaInicio + "\nFecha de fin: " + fechaFin);
+                }
+              </script>
+            </th>
+            <th>Total de ventas realizadas en el dia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th><center><input type="checkbox"></center></th>
+            <td>Jean Beltran</td>
+            <td>14</td>
+            <td>3</td>
+            <td>$50.000</td>
+          </tr>
+          <tr>
+            <th><center><input type="checkbox"></center></th>
+            <td>Natalia Suarez</td>
+            <td>10</td>
+            <td>2</td>
+            <td>$70.000</td>
+          </tr>
+          <tr>
+            <th><center><input type="checkbox"></center></th>
+            <td>Jose Marquez</td>
+            <td>22</td>
+            <td>4</td>
+            <td>$100.000</td>
+          </tr>
+          <tr>
+            <th><center><input type="checkbox"></center></th>
+            <td>---------</td>
+            <td>--</td>
+            <td>#</td>
+            <td>$---.---</td>
+          </tr>
+          <tr>
+            <th><center><input type="checkbox"></center></th>
+            <td>---------</td>
+            <td>--</td>
+            <td>#</td>
+            <td>$---.---</td>
+          </tr>
+          <tr>
+            <th><center><input type="checkbox"></center></th>
+            <td>---------</td>
+            <td>--</td>
+            <td>#</td>
+            <td>$---.---</td>
+          </tr>
+          <tr>
+            <th><center><input type="checkbox"></center></th>
+            <td>---------</td>
+            <td>--</td>
+            <td>#</td>
+            <td>$---.---</td>
+          </tr>
+          <tr>
+            <th><center><input type="checkbox"></center></th>
+            <td>---------</td>
+            <td>--</td>
+            <td>#</td>
+            <td>$---.---</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <div class="button-container">
+        <button class="b11" id="btn"><a href="../html/index-informes.html">Regresar</a></button>
+      </div>
+      <script src="../js/info empleados.js"></script>
+    <!-- SCRIPTS -->
+    <!-- Iconos sacados de la web de fontawesome con mi cuenta personal Angel. -->
+    <script src="https://kit.fontawesome.com/7182634b87.js" crossorigin="anonymous"></script>
+    <!-- Iconos sacados de la web de ionic.io/ionicons con mi cuenta personal Angel. -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Funciones del menu -->
+    <script src="../../../js/scriptMenu2.js"></script>
+</body>
+
+</html>
