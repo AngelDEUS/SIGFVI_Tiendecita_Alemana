@@ -1,0 +1,14 @@
+================================>
+Versión Actual: 0.3.0
+================================>
+Notas de versión: 
+***
+Se unen todas las ramas de los modulos del componente front-end.
+Se establecen rutas de navegabilidad y se asginan carpetas para las rutas completas.
+***
+================================>
+Notas de acciones:
+***
+--> Navegavilidad estable por link de rutas de carpetas.
+***
+================================>
