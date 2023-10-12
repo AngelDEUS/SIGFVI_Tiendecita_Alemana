@@ -12,3 +12,13 @@ Notas de acciones:
 --> Navegavilidad estable por link de rutas de carpetas.
 ***
 ================================>
+
+RAMAS:
+
+  origin/HEAD -> origin/Main
+  origin/Main
+  origin/Main_BackUp
+  origin/mod_informes
+  origin/mod_inventario_productos
+  origin/mod_usuarios
+  origin/mod_ventas
