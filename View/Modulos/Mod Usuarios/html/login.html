@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Style2DEUS.css">
+    <link rel="shortcut icon" href="../../../img/Logo-Tiendecita_Alemana.jpg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <section class="contenedor">
+        <div>
+            <img src="../../../img/Logo-Tiendecita_Alemana.jpg" alt="xD" class="squre">
+        </div>
+        <div class="class1">
+            <form>
+                <h1>Bienvenido a SIGFVI</h1>
+                <label for="username">Cedula de ciudadania</label><br>
+                <input type="text" id="username" name="username" placeholder="Username"><br><br>
+                <label for="password">Contraseña</label><br>
+                <input type="password" id="password" name="password" placeholder="Password"><br><br>
+                <!--<button type="submit" id="start">--><button type="button" id="start" class="inicio" onclick="Validar()">Iniciar
+                    Sesión</button>
+                <!--</button>-->
+            </form>
+        </div>
+        <div class="recuperar">
+            <a href="./recuperar contrasena.html" class="btnrecuperar">Recuperar Contraseña</a>
+        </div>
+    </section>
+
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

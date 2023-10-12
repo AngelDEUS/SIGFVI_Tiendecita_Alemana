@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+/*.tableuser{
+    border: 1px solid black;
+    width:100%;
+}
+
+.tableuser tr,.tableuser td,.tableuser th,.montocasilla,.casillaedit{
+    border: 1px solid black;
+    text-align: center;
+}*/
+.tableuser,.tabla-deposito{
+    border-collapse: collapse;
+    background-origin: padding-box;
+    position: flex;
+    /*padding: 10px 20px;*/
+    width:100%;
+}
+.tableuser th,.tableuser td{
+    padding: 11px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+th{
+    background-color: #f2bb15;
+}
+.agregarbtn{
+    direction: rtl;
+}
+
+a{
+    text-decoration: none;
+}
+
+.montocasilla,.casillaedit{
+    border-radius: 35px;
+    border: 1px solid grey;
+    text-align: center;
+}

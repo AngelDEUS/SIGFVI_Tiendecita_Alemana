@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleMenuV2.css">
+    <link rel="stylesheet" href="../../../css/allStylesPage.css">
+    <link rel="shortcut icon" href="../../../img/Logo-Tiendecita_Alemana.jpg" class="favicon">
+    <title>Edit User</title>
+    <link rel="stylesheet" href="../css/mod-ventas.css">
+    <!-- Iconos sacados de la web de fontawesome con mi cuenta personal Angel. -->
+    <script src="https://kit.fontawesome.com/7182634b87.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header>
+        <div class="icon__menu">
+            <i class="fa-solid fa-bars" id="btn_open"></i>
+            <img src="../../../img/Logo-SIGFVI.png" class="logo_sigfvi-2" id="logo-sigfvi-top" alt="log">
+        </div>
+        <!--
+        <div class="navbar-top">
+            <div class="image">
+                <img src="./img/Iconos/user-icono-PP.png" alt="Imagen">
+            </div>
+            <div class="txt-container">
+                <p class="rol">Administrador</p>
+                <p class="name">Miguel Angel</p>
+            </div>
+            <img src="./img/Iconos/list.png" class="image-left" alt="abajo">
+        </div>
+        -->
+    </header>
+
+    <!-- Menu lateral -->
+    <div class="menu">
+        <ion-icon name="menu"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral ">
+        <div>
+            <div class="nombre-pagina">
+                <img src="../../../img/Logo-Tiendecita_Alemana.jpg" class="logo_sigfvi" id="logo-menu" alt="log">
+                <span>Tiendecita Alemana</span>
+            </div>
+            <button class="boton">
+                <ion-icon name="add-outline"></ion-icon>
+                <span>Nueva Venta</span>
+            </button>
+        </div>
+
+        <!-- Submenu-->
+        <nav class="navegacion">
+            <ul>
+
+                <!-- Boton INICIO -->
+                <li>
+                    <a href="#">
+                        <ion-icon name="home"></ion-icon>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+
+                <!-- Botón Gestión de Usuarios -->
+                <div class="list__item">
+                    <div class="list__button list__button--click">
+                        <a href="#">
+                            <ion-icon name="person"></ion-icon>
+                            <span>Gestión de Usuarios</span>
+                            <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="./tabla usuarios.html" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Usuarios</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="./tabla proveedores.html" class="nav_link nav__link--inside">
+                                <span>Proveedores</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="./tabla deudores.html" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Deudores</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Inventario -->
+                <div class="list__item">
+                    <div class="list__button list__button--click">
+                        <a href="#">
+                            <ion-icon name="cube"></ion-icon>
+                            <span>Inventario</span>
+                            <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Inventario 1</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <span>Inventario 2</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Inventario 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Ventas y facturacion -->
+                <div class="list__item">
+                    <div class="list__button list__button--click">
+                        <a href="#">
+                            <ion-icon name="cash"></ion-icon>
+                            <span>Ventas y facturacion</span>
+                            <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Venta 1</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <span>Venta 2</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Venta 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Informes -->
+                <div class="list__item">
+                    <div class="list__button list__button--click">
+                        <a href="#">
+                            <ion-icon name="reader"></ion-icon>
+                            <span>Informes</span>
+                            <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Informe 1</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <span>Informe 2</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Informe 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Ayuda -->
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-cat"></i>
+                        <span>Ayuda</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <!-- Separador del menu -->
+            <div class="linea"></div>
+            <!-- Info del usuario menu-->
+            <div class="opciones-usuario">
+                <ul class="navegacion usu">
+                    <!-- Boton Configuracion -->
+                    <li>
+                        <a href="#">
+                            <ion-icon name="cog"></ion-icon>
+                            <span>Configuración</span>
+                        </a>
+                    </li>
+                    <!-- Boton Cerrar Sesión -->
+                    <li>
+                        <a href="#">
+                            <ion-icon name="log-out"></ion-icon>
+                            <span>Cerrar Sesión</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="usuario">
+                <img src="../../../img/Usuarios/Login-User-1.jpg" alt="img-User">
+
+                <div class="info-usuario">
+                    <div class="nombre-email">
+                        <span class="nombre">Administrador</span>
+                        <span class="email">Maycol Cardona</span>
+                    </div>
+                    <ion-icon name="ellipsis-vertical"></ion-icon>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Contenido General de la Pagina -->
+    <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  -->
+
+    <main class="claseMain">
+        <div class="container__Main">
+            <h1>Editar Usuario</h1>
+            <!--<div class="datos-contenido"></div>-->
+            <form action="" class="datos-contenido">
+                <span>
+                    <label for="name1">Primer Nombre</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Francisco</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="name1" id="name1" placeholder="Primer Nombre" onblur="Verificar_nombre1()">
+                    <p id="wrongname1"></p>
+                </span>
+                <span>
+                    <label for="name2">Segundo Nombre</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Arnulfo</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="name2" id="name2" placeholder="Segundo Nombre" onblur="Verificar_nombre2()">
+                    <p id="wrongname2"></p>
+                </span>
+                <span>
+                    <label for="apell1">Primer Apellido</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Aristizabal</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="apell1" id="apell1" placeholder="Primer Apellido" onblur="Verificar_apell1()">
+                    <p id="wrongapell1"></p>
+                </span>
+                <span>
+                    <label for="apell2">Segundo Apellido</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Rodriguez</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="apell2" id="apell2" placeholder="Segundo Apellido" onblur="Verificar_apell2()">
+                    <p id="wrongapell2"></p>
+                </span>
+                <span>
+                    <label for="tipoid">Tipo de Identificación</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Cedula de Ciudadania</td>
+                        </tr>
+                    </table>
+                    <select name="tipoid" id="tipoid" onblur="Verificar_tipoid()">
+                        <option value="0">Seleccionar</option>
+                        <option value="1">Cedula de Ciudadania</option>
+                        <option value="2">Cedula Extranjera</option>
+                        <option value="3">Pasaporte</option>
+                        <option value="4">Tarjeta de identidad</option>
+                    </select>
+                    <p id="wrongtipoid"></p>
+                </span>
+                <span>
+                    <label for="numid">Número de Identificación</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>1425369874</td>
+                        </tr>
+                    </table>
+                    <input type="text" name="numid" id="numid" placeholder="Identificación" onblur="Verificar_id()">
+                    <p id="wrongid"></p>
+                </span>
+                <span>
+                    <label for="cel">Numero de Telefono</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>3112547895</td>
+                        </tr>
+                    </table>
+                    <input type="number" name="cel" id="cel" placeholder="Numero" onblur="Verificar_tel()">
+                    <p id="wrongtel"></p>
+                </span>
+                <span>
+                    <label for="cel">Correo electronico</label>
+                    <table class="casillaedit">
+                        <tr>
+                            <td>Fra.aris@gmail.com</td>
+                        </tr>
+                    </table>
+                    <input type="email" name="email" id="email" placeholder="email" onblur="Verificar_email()">
+                    <p id="wrongemail"></p>
+                </span>
+                
+                <!--<label for="estado">Estado</label>
+                <table class="casillaedit">
+                    <tr>
+                        <td>Activo</td>
+                    </tr>
+                </table>
+                <select name="estado" id="estado">
+                    <option value="0">Seleccionar</option>
+                    <option value="1">Activo</option>
+                    <option value="2">Inactivo</option>
+                </select>
+                <br>-->
+                <span>
+                    <br>
+                    <button type="button" name="submit" id="submit" class="b4__abrir" onclick="Verificar_registro()">Guardar
+                        Cambios</button>
+                </span>
+            </form>
+        </div>
+    </main>
+
+    <!-- SCRIPTS -->
+    <!-- Iconos sacados de la web de fontawesome con mi cuenta personal Angel. -->
+    <script src="https://kit.fontawesome.com/7182634b87.js" crossorigin="anonymous"></script>
+    <!-- Iconos sacados de la web de ionic.io/ionicons con mi cuenta personal Angel. -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Funciones del menu -->
+    <script src="../../../js/scriptMenu2.js"></script>
+    <!--Validaciones↓--> 
+    <script src="../js/edit_user.js"></script>
+</body>
+
+</html>

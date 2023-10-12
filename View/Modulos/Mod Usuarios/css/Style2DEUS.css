@@ -1,0 +1,151 @@
+/*
+
+░█▀▀▄ ░█▀▀▀ ░█─░█ ░█▀▀▀█ 　 ░█▀▀█ ░█▀▀▀█ ░█▀▀▀█ 
+░█─░█ ░█▀▀▀ ░█─░█ ─▀▀▀▄▄ 　 ░█─── ─▀▀▀▄▄ ─▀▀▀▄▄ 
+░█▄▄▀ ░█▄▄▄ ─▀▄▄▀ ░█▄▄▄█ 　 ░█▄▄█ ░█▄▄▄█ ░█▄▄▄█
+
+*/
+*{
+    color: #f2bb15;
+    overflow: hidden;
+}
+body{
+    background: rgb(32, 32, 32);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+  }
+.squre {
+    border-radius: 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    width: 30%;
+}
+
+.contenedor{
+    display: grid;
+    align-items: right;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    padding: 1%;
+    /*margin-left:36%;
+    magin-right:36%;*/
+    width: 100%;
+    max-width: 400px;
+    background-color: #252327;
+    border-radius: 30px;
+    border: 1px solid #f2bb1513;
+    text-align: center;
+    /*height: auto;*/
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f2bb15;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f2bb15;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f2bb15;
+    border-radius: 35px;
+    background-color: rgb(42, 40, 40);
+    color: #f2bb15;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+    border: 3px solid #f2bb15;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.back button .btnback{
+    text-decoration: none;
+    padding: 8px;
+    align-items: left;
+}
+.back button .btnback:hover{
+    color: #252327;
+    
+}
+.back button{
+    background-color: #252327;
+    display: block;
+    align-items: left;
+    color: #f2bb15;
+    /*border-radius: 35px;*/
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-weight: bolder;
+    font-family: forte;
+    font-size: 25px;
+}
+.back button:hover{
+    background-size: cover;
+    /*background-image: url(../img/back\ negro.png);*/
+    display: block;
+    align-items: left;
+    border-radius: 35px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.inicio,#submitsoli{
+    /*background: linear-gradient(120deg,rgb(42, 40, 40) /*0%,#00ffff 35%,rgb(189, 193, 189) 100%);*/
+    background-color: #252327;
+    color: #f2bb15;
+    border-radius: 35px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 45%;
+    display: inline-block;
+}
+/*button[type="submit"] a{
+ padding: 1rem;
+ display: grid;
+ border-radius: 35px;
+ width: 80%;
+}*/
+
+button:hover,.inicio:hover,#submitsoli:hover/*, button[type="submit"] a:hover*/{
+    background-color: #f2bb15;
+    transition: all.4s;
+    cursor:pointer;
+    color: rgb(14, 13, 13);
+    border: 1px solid#f2bb15;
+}
+
+.recuperar{
+   display: inline-block;
+   padding-top: 4%;
+}
+.recuperar .btnrecuperar:hover{
+    color: #252327;
+    background-color: #f2bb15;
+    border-radius: 35px;
+    padding: 0.5% ;
+}

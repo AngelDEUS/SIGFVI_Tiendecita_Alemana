@@ -72,7 +72,7 @@ CREATE TABLE
         Segundo_Apellido_Usuario VARCHAR(45) NULL DEFAULT NULL COMMENT 'Campo con el segundo apellido de usuario.',
         Numero_Contacto_Usuario VARCHAR(10) NOT NULL COMMENT 'Campo con el numero del contacto de un usuario de tipo cadena de texto.',
         Email_Usuario VARCHAR(45) NOT NULL COMMENT 'Campo con el correo electorinico del usuario.',
-        Password_Usuario VARCHAR(30) NOT NULL COMMENT 'Campo con la password de ingreso a el sistema del usuario.',
+        Password_Usuario VARCHAR(45) NOT NULL COMMENT 'Campo con la password de ingreso a el sistema del usuario.',
         ID_Tipo_Cargo_FK TINYINT NOT NULL COMMENT 'Campo con el tipo del cargo asignado a el Usuario como llave foranea',
         ID_Estado_FK TINYINT NOT NULL COMMENT 'Campo para el estado actual del Usuario',
         PRIMARY KEY (
@@ -317,3 +317,6 @@ CREATE TABLE
         FOREIGN KEY (ID_Registro_Proveedor_FKPK) REFERENCES Registro_Proveedor (ID_Registro_Proveedor_PK),
         FOREIGN KEY (ID_Producto_FKPK) REFERENCES Producto (ID_Producto_PK)
     );
+    
+    
+    
