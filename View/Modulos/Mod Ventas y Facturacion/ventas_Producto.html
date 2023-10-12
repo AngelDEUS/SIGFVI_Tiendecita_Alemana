@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../css/styleMenuV2.css ">
+    <link rel="stylesheet" href="./../../css/allStylesPage.css">
+    <link rel="stylesheet" href="./css/mod-ventas.css">
+    <link rel="shortcut icon" href="./../../img/Logo-Tiendecita_Alemana.jpg" class="favicon">
+    <title>Ventas y facturacion</title>
+
+    <!-- SweetAlert-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+</head>
+
+<body>
+    <header>
+        <div class="icon__menu">
+            <i class="fa-solid fa-bars" id="btn_open"></i>
+            <img src="./img/Logo-SIGFVI.png" class="logo_sigfvi-2" id="logo-sigfvi-top" alt="log">
+        </div>
+    </header>
+
+    <!-- Menu lateral -->
+    <div class="menu">
+        <ion-icon name="menu"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral ">
+        <div>
+            <div class="nombre-pagina">
+                <img src="./img/Logo-Tiendecita_Alemana.jpg" class="logo_sigfvi" id="logo-menu" alt="log">
+                <span>Tiendecita Alemana</span>
+            </div>
+            <button class="boton">
+                <ion-icon name="add-outline"></ion-icon>
+                <span>Nueva Venta</span>
+            </button>
+        </div>
+
+        <!-- Submenu-->
+        <nav class="navegacion">
+            <ul>
+
+                <!-- Boton INICIO -->
+                <li>
+                    <a href="#">
+                        <ion-icon name="home"></ion-icon>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+
+                <!-- Botón Gestión de Usuarios -->
+                <div class="list__item">
+                    <div class="list__button list__button--click">
+                        <a href="#">
+                            <ion-icon name="person"></ion-icon>
+                            <span>Gestión de Usuarios</span>
+                            <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>G1 User</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <span>G2 User</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>G3 User</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Inventario -->
+                <div class="list__item">
+                    <div class="list__button list__button--click">
+                        <a href="#">
+                            <ion-icon name="cube"></ion-icon>
+                            <span>Inventario</span>
+                            <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Inventario 1</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <span>Inventario 2</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Inventario 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Ventas y facturacion -->
+                <div class="list__item">
+                    <div class="list__button list__button--click">
+                        <a href="#">
+                            <ion-icon name="cash"></ion-icon>
+                            <span>Ventas y facturacion</span>
+                            <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="./../../Modulos/Mod Ventas y Facturacion/ventas_Producto.html"
+                                class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Realizar Venta</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="./../../Modulos/Mod Ventas y Facturacion/pedidos_en_cola.html"
+                                class="nav_link nav__link--inside">
+                                <span>Pedidos en Cola</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Venta 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Informes -->
+                <div class="list__item">
+                    <div class="list__button list__button--click">
+                        <a href="#">
+                            <ion-icon name="reader"></ion-icon>
+                            <span>Informes</span>
+                            <ion-icon name="chevron-forward-outline" class="list__arrow"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Informe 1</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <span>Informe 2</span>
+                            </a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav_link nav__link--inside">
+                                <div class="sub-Closed"></div>
+                                <span>Informe 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Ayuda -->
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-cat"></i>
+                        <span>Ayuda</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <!-- Separador del menu -->
+            <div class="linea"></div>
+            <!-- Info del usuario menu-->
+            <div class="opciones-usuario">
+                <ul class="navegacion usu">
+                    <!-- Boton Configuracion -->
+                    <li>
+                        <a href="#">
+                            <ion-icon name="cog"></ion-icon>
+                            <span>Configuración</span>
+                        </a>
+                    </li>
+                    <!-- Boton Cerrar Sesión -->
+                    <li>
+                        <a href="#">
+                            <ion-icon name="log-out"></ion-icon>
+                            <span>Cerrar Sesión</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="usuario">
+                <img src="./../../img/Usuarios/Login-User-1.jpg" alt="img-User">
+
+                <div class="info-usuario">
+                    <div class="nombre-email">
+                        <span class="nombre">Administrador</span>
+                        <span class="email">Miguel Angel Ayala</span>
+                    </div>
+                    <ion-icon name="ellipsis-vertical"></ion-icon>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Contenido General de la Pagina -->
+    <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  -->
+
+    <main class="claseMain">
+        <div class="container__Main">
+            <div>
+                <h1>Facturas</h1>
+                <p>
+                    Este es el modulo encargado visualizar las <s>facturas</s> de las <s>ventas</s> y generar las
+                    facturas.
+                </p><br>
+                <hr>
+            </div>
+
+            <section class="sec__main">
+                <div class="venta">
+                    <div class="container">
+                        <div>
+                            <div class="button-container">
+                                <div>
+                                    <h4>Puede buscar los productos deseados por ID o por Nombre</h4>
+                                </div>
+                                <div class="form">
+                                    <input type="search" id="productoid" name="search"
+                                        placeholder="Buscar producto (Ej: ABC123)">
+                                    <input type="number" id="productUnits" placeholder="Unidades" minlength="1">
+                                    <button onclick="agregarProducto() " class="agragarproducto">Agregar
+                                        Producto</button>
+                                    <input type="submit" class="b1__abrir" value="Ver Lista de Productos +">
+                                </div>
+
+                            </div>
+                            <hr>
+                        </div>
+
+                        <section class="table__body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Nombre</th>
+                                        <th>Categoría</th>
+                                        <th>Cantidad</th>
+                                        <th>Stock Mínimo</th>
+                                        <th>Precio Compra</th>
+                                        <th>Precio Venta</th>
+                                        <th>Fecha de Vencimiento</th>
+                                        <th>Estado</th>
+                                        <th>Unidades</th>
+                                        <th>Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="productTableBody">
+                                    <!-- Aquí se mostrarán los productos agregados -->
+                                </tbody>
+                            </table>
+                        </section>
+                        <div class="tableCalc">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Subtotal de Venta</th>
+                                        <th>IVA (19%)</th>
+                                        <th>Total</th>
+                                        <hr>
+                                    </tr>
+                                </thead>
+                                <tbody id="summaryTableBody">
+                                    <!-- Aquí se mostrará el resumen -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <button class="b2__abrir btn2-xD">Proceder al Pago</button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </div>
+    </main>
+
+    <!--   Modales    -->
+    <section class="modal">
+        <div class="modal__container">
+            <div class="top__buttons">
+                <button class="circlle -cerrar"></button>
+                <button class="circlle -mini"></button>
+            </div>
+            <h1 class="modal__title">Productos Registrados</h1>
+            <p class="modal__paragraph">
+                En este panel puede realizar la <s>busqueda</s> de un producto para <s>agragar</s> a la venta en
+                curso.
+            </p>
+            <hr class="hr--style">
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th> F. </th>
+                            <th> Codigo de producto </th>
+                            <th> Nombre del producto </th>
+                            <th> Tipo de producto </th>
+                            <th> Cantidad Neta de Producto </th>
+                            <th> Cantidad de unidades</th>
+                            <th> Precio de proveedor </th>
+                            <th> Precio de Venta </th>
+                            <th> Fecha de Caducidad </th>
+                            <th> Nombre del proveedor </th>
+                            <th> Estado </th>
+                        </tr>
+                    </thead>
+                    <table>
+                        <tbody id="tablaMatriz"></tbody>
+
+                    </table>
+                </table>
+            </section>
+
+            <input type="submit" class="modal__close btnnClose" value="Cerrar +">
+    </section>
+
+    <section class="modal2">
+        <div class="modal__container2">
+            <div class="top__buttons">
+                <button class="circlle -cerrar"></button>
+                <button class="circlle -mini"></button>
+            </div>
+            <h1 class="modal__title">Metodo de pago</h1>
+            <p class="modal__paragraph">
+                En este panel puede escoger el <s>Metodo de Pago </s> para esta venta.
+                curso.
+                Tener en cuenta este numero para pagos electronicos <s>"+57 300 2752187"</s>
+            </p>
+            <hr class="hr--style">
+            <div class="info__abajo">
+                <h2>Escoger metodo de pago</h2>
+                <h4 class="fecha">Fecha: 28/06/2023</h4>
+            </div>
+            <hr class="hr--style">
+            <div class="formulario-s">
+                <form class="form pagos">
+                    <div class="selecciones">
+                        <span><input type="radio" name="radio" value="Nequi" disabled> Pago por Nequi</span>
+                        <span><input type="radio" name="radio" value="Daviplata" disabled> Pago por Daviplata</span>
+                        <span><input type="radio" name="radio" value="efectivo" checked> Pago en efectivo</span>
+                    </div>
+                </form>
+                <form id="calculator">
+                    <label for="total">Total de la Compra:</label>
+                    <input type="number" id="total" step="0.01" required><br>
+
+                    <label for="payment" style="margin-left: 100px;">Pago:</label>
+                    <input type="number" id="payment" step="0.01" required><br>
+
+                    <input type="submit" value="Calcular Cambio" class="calcular__cambio">
+                    <h2 style="color: rgb(73, 73, 77);">Cambio: <span id="change"></span></h2>
+                </form>
+
+            </div>
+            <form class="bloque">
+                <input type="submit" class="modal2__close btnnClose2" value="Realizar Venta">
+            </form>
+        </div>
+
+    </section>
+
+
+    <script>
+        document.getElementById('calculator').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Obtener el valor del total y el pago
+            var total = parseFloat(document.getElementById('total').value);
+            var payment = parseFloat(document.getElementById('payment').value);
+
+            // Verificar si el pago es menor que el total
+            if (payment < total) {
+                alert("El pago no puede ser menor que el total de la compra.");
+                return;
+            }
+
+            // Calcular el cambio
+            var change = payment - total;
+
+            // Actualizar el resultado en la página
+            document.getElementById('change').textContent = change.toFixed(2);
+        });
+        const matriz = [
+            ['ABC123', 'Chee-tris', 'Empaquetado', 40, 6, 1000, 1500, '2023-12-31', 'Activo'],
+            ['XYZ456', 'Chee-tris Grande', 'Empaquetado', 80, 4, 200, 3000, '2023-10-15', 'Activo'],
+            ['DEF789', 'Poker', 'Elatados', 450, 40, 1800, 2500, '2024-02-28', 'Activo'],
+            ['GHI012', 'Ron Caldas', 'Enbotellado', 800, 8, 30000, 60000, '2023-11-30', 'Activo'],
+            ['JKL345', 'Yogur', 'Lácteos', 200, 12, 1.80, 2.20, '2023-10-25', 'Activo'],
+            ['MNO678', 'Vive 100', 'Enbotellado', 800, 15, 1200, 1900, '2024-03-15', 'Activo'],
+            ['PQR901', 'Coca Cola Zero', 'Embotellado', 3000, 10, 4000, 5500, '2023-11-10', 'Activo'],
+            ['STU234', 'Jack Daniels', 'Embotellado', 750, 5, 70000, 80000, '2024-01-20', 'Activo'],
+            ['VWX567', 'Absolut Vodka', 'Embotellado', 700, 10, 38000, 45000, '2023-10-05', 'Activo'],
+            ['YZA890', 'Maní Salado', 'Empaquetado', 150, 24, 1.20, 1.80, '2023-12-15', 'Activo']
+        ];
+        var tabla = document.getElementById("tablaMatriz");
+        for (var i = 0; i < matriz.length; i++) {
+            var fila = document.createElement("tr");
+
+            for (var j = 0; j < matriz[i].length; j++) {
+                var celda = document.createElement("td");
+                celda.textContent = matriz[i][j];
+                fila.appendChild(celda);
+            }
+
+            tabla.appendChild(fila);
+        }
+    </script>
+    <!-- SCRIPTS -->
+    <!-- Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Iconos sacados de la web de fontawesome con mi cuenta personal Angel. -->
+    <script src="https://kit.fontawesome.com/7182634b87.js" crossorigin="anonymous"></script>
+    <!-- Iconos sacados de la web de ionic.io/ionicons con mi cuenta personal Angel. -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Funciones del menu -->
+    <script src="./../../js/scriptMenu2.js"></script>
+    <!-- Funciones del productos Agregar -->
+    <script src="./js/productosAgregar.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal2.js"></script>
+</body>
+
+</html>
