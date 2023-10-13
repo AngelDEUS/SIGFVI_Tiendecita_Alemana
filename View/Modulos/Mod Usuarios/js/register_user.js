@@ -2,12 +2,17 @@ function Verificar_nombre1(){
     const Innombre1 = document.getElementById('name1').value;
     
     let con=true;
+    let validacionlt=/^[A-Za-z]+$/;
     
     if(Innombre1.trim() === ""){
         document.getElementById('wrongname1').innerHTML='Este espacio no puede quedar en blanco';
         con=false;
         /*Innombre.focus();*/
-    }else{
+    }else if(!validacionlt.test(Innombre1)){
+        document.getElementById('wrongname1').innerHTML='Digitar solo letras';
+        con=false;
+    }
+    else{
         document.getElementById('wrongname1').innerHTML='';
     }
     
@@ -18,9 +23,13 @@ function Verificar_nombre2(){
     const Innombre2 = document.getElementById('name2').value;
 
     let con=true;
+    let validacionlt=/^[A-Za-z]+$/;
 
     if(Innombre2.trim() === ""){
         document.getElementById('wrongname2').innerHTML='Este espacio no puede quedar en blanco';
+        con=false;
+    }else if(!validacionlt.test(Innombre2)){
+        document.getElementById('wrongname2').innerHTML='Digitar solo letras';
         con=false;
     }else{
         document.getElementById('wrongname2').innerHTML='';
@@ -33,9 +42,13 @@ function Verificar_apell1(){
     const Inapell1 = document.getElementById('apell1').value;
 
     let con=true;
+    let validacionlt=/^[A-Za-z]+$/;
 
     if(Inapell1.trim() === ""){
         document.getElementById('wrongapell1').innerHTML='Este espacio no puede quedar en blanco';
+        con=false;
+    }else if(!validacionlt.test(Inapell1)){
+        document.getElementById('wrongapell1').innerHTML='Digitar solo letras';
         con=false;
     }else{
         document.getElementById('wrongapell1').innerHTML='';
@@ -48,9 +61,13 @@ function Verificar_apell2(){
     const Inapell2 = document.getElementById('apell2').value;
 
     let con=true;
+    let validacionlt=/^[A-Za-z]+$/;
 
     if(Inapell2.trim() === ""){
         document.getElementById('wrongapell2').innerHTML='Este espacio no puede quedar en blanco';
+        con=false;
+    }else if(!validacionlt.test(Inapell2)){
+        document.getElementById('wrongapell2').innerHTML='Digitar solo letras';
         con=false;
     }else{
         document.getElementById('wrongapell2').innerHTML='';
@@ -94,9 +111,13 @@ function Verificar_tel(){
     const Intel = document.getElementById('cel').value;
 
     let con=true;
+    let validacionlt=/^[A-Za-z]+$/;
 
     if(Intel === ""){
         document.getElementById('wrongtel').innerHTML='Este espacio no puede quedar en blanco';
+        con=false;
+    }else if(validacionlt.test(Intel)){
+        document.getElementById('wrongtel').innerHTML='Digitar solo numeros';
         con=false;
     }else{
         document.getElementById('wrongtel').innerHTML='';
